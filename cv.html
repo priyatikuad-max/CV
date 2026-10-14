@@ -18,6 +18,15 @@
     color: #000;
     background: #fff;
   }
+  /* On screen, show the page like a sheet of A4 paper with its margins */
+  @media screen {
+    html { background: #e5e5e5; }
+    body { max-width: 210mm; margin: 16px auto; padding: 16mm 17mm 15mm; box-shadow: 0 1px 6px rgba(0,0,0,.2); }
+  }
+  @media screen and (max-width: 600px) {
+    body { margin: 0; padding: 16px; box-shadow: none; }
+    .row { flex-wrap: wrap; }
+  }
   header { text-align: center; margin-bottom: 10pt; }
   h1 { font-size: 22pt; letter-spacing: 0.5pt; margin: 0 0 3pt; font-weight: 700; }
   .contact { font-size: 11pt; color: #000; }
@@ -33,7 +42,7 @@
   .row { display: flex; align-items: baseline; gap: 8pt; }
   .row .title { font-weight: 700; font-size: 12pt; flex: 0 1 auto; }
   .row .rule { flex: 1 1 auto; border-bottom: 0.5pt solid #aaa; transform: translateY(-3pt); min-width: 12pt; }
-  .row .date { font-style: italic; font-size: 11pt; white-space: nowrap; flex: 0 0 auto; }
+  .row .date { font-style: italic; font-size: 11pt; white-space: nowrap; flex: 0 0 auto; padding-right: 2pt; }
   .role { font-weight: 400; }
   .sub { padding-left: 12pt; }
   .sub p { margin: 1pt 0; }
