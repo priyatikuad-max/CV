@@ -38,17 +38,24 @@
     margin: 14pt 0 5pt;
     break-after: avoid;
   }
-  .entry { margin-bottom: 8pt; break-inside: avoid; }
-  .row { display: flex; align-items: baseline; gap: 8pt; }
+  /* Black dot marks each entry title; details underneath use a small dash */
+  .entry { position: relative; margin-bottom: 8pt; padding-left: 14pt; break-inside: avoid; }
+  .entry::before { content: "\2022"; position: absolute; left: 1pt; top: 0; font-size: 13pt; line-height: 1.15; }
+  .row { display: flex; align-items: baseline; gap: 6pt; }
   .row .title { font-weight: 700; font-size: 12pt; flex: 0 1 auto; }
-  .row .rule { flex: 1 1 auto; border-bottom: 0.5pt solid #aaa; transform: translateY(-3pt); min-width: 12pt; }
+  .row .rule { flex: 1 1 auto; border-bottom: 0.5pt solid #aaa; transform: translateY(-3pt); min-width: 0; }
   .row .date { font-style: italic; font-size: 11pt; white-space: nowrap; flex: 0 0 auto; padding-right: 2pt; }
   .role { font-weight: 400; }
-  .sub { padding-left: 12pt; }
+  .sub { padding-left: 10pt; }
   .sub p { margin: 1pt 0; }
   em { font-style: italic; }
-  ul { margin: 2pt 0 0; padding-left: 26pt; }
+  ul { margin: 2pt 0 0; padding-left: 0; list-style: none; }
+  h2 + ul > li { position: relative; padding-left: 14pt; }
+  h2 + ul > li::before { content: "\2022"; position: absolute; left: 1pt; top: 0; font-size: 13pt; line-height: 1.15; }
   li { margin: 1.5pt 0; text-align: left; }
+  .entry ul { list-style: none; padding-left: 10pt; }
+  .entry li { position: relative; padding-left: 9pt; }
+  .entry li::before { content: "-"; position: absolute; left: 0; }
 </style>
 </head>
 <body>
