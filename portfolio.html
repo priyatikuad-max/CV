@@ -49,6 +49,27 @@
     font-size: 9pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--mist);
   }
 
+  /* Contents */
+  .contents .band { position: absolute; left: 20mm; top: 0; width: 13mm; height: 74mm; background: var(--stone); }
+  .contents .band-thin { position: absolute; left: 36mm; top: 0; width: 0.6mm; height: 54mm; background: var(--stone); opacity: .6; }
+  .contents .head { position: absolute; left: 46mm; right: 20mm; top: 40mm; }
+  .contents .kicker { font-size: 9.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--mist); margin: 0 0 3mm; }
+  .contents h2 { font-size: 40pt; font-weight: 400; letter-spacing: 4pt; text-transform: uppercase; line-height: 1; margin: 0; }
+  .contents .rule { position: absolute; left: 20mm; right: 20mm; top: 82mm; border-top: 0.4pt solid var(--ink); }
+  .contents ol { list-style: none; margin: 0; padding: 0; position: absolute; left: 46mm; right: 20mm; top: 100mm; }
+  .contents li { display: grid; grid-template-columns: 17mm 1fr auto; column-gap: 4mm; align-items: baseline;
+    padding: 0 0 9mm; margin-bottom: 9mm; border-bottom: 0.3pt solid #cfc8bf; }
+  .contents li:last-child { border-bottom: 0; }
+  .contents .no { font-size: 24pt; color: var(--stone); letter-spacing: 1pt; line-height: 1; }
+  .contents .t { font-size: 19pt; margin: 0; line-height: 1.15; }
+  .contents .s { font-size: 11.5pt; font-style: italic; margin: 1.5mm 0 0; color: #444; }
+  .contents .pg { font-size: 12pt; letter-spacing: 1pt; color: var(--mist); }
+  .contents .foot {
+    position: absolute; left: 20mm; right: 20mm; bottom: 14mm;
+    display: flex; justify-content: space-between;
+    font-size: 9pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--mist);
+  }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -134,6 +155,46 @@
   <div class="foot">
     <span>Selected Works</span>
     <span>Halle (Saale), Germany</span>
+  </div>
+</section>
+
+<section class="page contents">
+  <div class="band"></div>
+  <div class="band-thin"></div>
+
+  <div class="head">
+    <p class="kicker">Selected Works</p>
+    <h2>Contents</h2>
+  </div>
+  <div class="rule"></div>
+
+  <!-- Page numbers are placeholders: update once the project pages are laid out -->
+  <ol>
+    <li>
+      <span class="no">01</span>
+      <div><p class="t">Resilience &amp; Renewal</p><p class="s">Adaptive reuse of war-damaged buildings, Berlin</p></div>
+      <span class="pg">03</span>
+    </li>
+    <li>
+      <span class="no">02</span>
+      <div><p class="t">Church Redesign</p><p class="s">A sacred space, reimagined</p></div>
+      <span class="pg">09</span>
+    </li>
+    <li>
+      <span class="no">03</span>
+      <div><p class="t">Heritage in the City</p><p class="s">Integrating urban heritage into the city fabric</p></div>
+      <span class="pg">15</span>
+    </li>
+    <li>
+      <span class="no">04</span>
+      <div><p class="t">Cultural Centre</p><p class="s">A place for community, art and gathering</p></div>
+      <span class="pg">21</span>
+    </li>
+  </ol>
+
+  <div class="foot">
+    <span>Priyati Golder · Portfolio</span>
+    <span>02</span>
   </div>
 </section>
 
