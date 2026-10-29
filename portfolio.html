@@ -217,6 +217,19 @@
   .street .chip { left: 22mm; bottom: 10mm; }
   .fin .run, .street .run { display: none; }
 
+  .proj-text .sketches { position: absolute; left: 18mm; right: 22mm; bottom: 26mm; display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; }
+  .proj-text .sketches img { width: 100%; height: 38mm; object-fit: contain; object-position: left bottom; mix-blend-mode: multiply; display: block; }
+  .proj-text .sketches p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; line-height: 1.4; color: #2a2a2a; margin: 2mm 0 0; }
+  .proj-text .sketches b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 1.8mm; }
+
+  /* Project 01 site map page */
+  .mappage img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+  .mappage .legend { position: absolute; left: 22mm; bottom: 12mm; background: var(--paper); padding: 2.4mm 3.5mm; max-width: 120mm;
+    font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.6pt; color: #2a2a2a; line-height: 1.5; }
+  .mappage .legend b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; display: block; margin-bottom: .8mm; }
+  .mappage .legend i { display: inline-block; width: 3mm; height: 3mm; vertical-align: -.4mm; margin-right: 1.8mm; font-style: normal; }
+  .mappage .legend span { margin-right: 5mm; white-space: nowrap; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -367,6 +380,46 @@
   </ol>
 
   <div class="run"><b>Portfolio</b>03</div>
+</section>
+</div>
+
+<!-- Project 01 opening spread (pages 04–05) -->
+<div class="spread">
+<section class="page proj-text">
+  <div class="band"></div>
+  <div class="wrap">
+    <p class="no">01</p>
+    <h2>Resilience &amp; Renewal</h2>
+    <p class="sub">Adaptive reuse of a war-damaged building, Berlin</p>
+    <dl class="meta">
+      <dt>Project</dt><dd>Master&rsquo;s Thesis</dd>
+      <dt>Mentors</dt><dd>Prof. Dr. Rudolf Lückmann &amp; Architect von Ey</dd>
+      <dt>Year</dt><dd>September 2025</dd>
+      <dt>Location</dt><dd>Kärntener Straße 26, Berlin-Schöneberg, Germany</dd>
+    </dl>
+    <div class="sec" style="margin-top:8mm"><h3>Context</h3><div>
+      <p>Kärntener Straße 26 is a Gründerzeit corner building from 1899, originally five storeys high with a roof floor and decorated gables. During the Second World War, its corner section lost two floors and its roof and was covered with a temporary roof. Today the corner stands only three storeys high, leaving a gap in the street wall of an otherwise continuous residential street.</p>
+    </div></div>
+    <div class="sec"><h3>Approach</h3><div>
+      <p>The project asked two questions: could more housing and a commercial ground floor make economically efficient use of the existing building, and could rebuilding the lost floors and roof with contemporary materials restore the street wall? Historical maps, the 1899 plans, on-site observation and a review of planning regulations informed a design model that was developed step by step.</p>
+    </div></div>
+    <div class="sec"><h3>Design</h3><div>
+      <p>The design treats the damaged building not as a ruin to be preserved but as an incomplete structure to be continued. Working entirely within the existing fabric, without demolition, every floor was redesigned through an iterative model tested against the two research questions. The two lost corner floors are rebuilt and the attic is converted into a roof floor, increasing the number of flats from 24 to 28 while keeping their original size. The corner, once a void, becomes the building&rsquo;s public face: a restaurant visible from two streets opens into the formerly unused courtyard, now a shared space for residents. New balconies give every street-facing room a connection to the neighbourhood, and a rhythm of gables abstracted from the 1899 façade completes the roofline.</p>
+    </div></div>
+    <p class="lead" style="margin-top:7mm">The building returns to the height of its neighbours and to its 1899 floor area, closing the gap left by the war with a new look inspired by its traditional appearance.</p>
+  </div>
+  <div class="sketches">
+    <div><img src="images/p01-sketch-before.png" alt="Sketch of the corner today"><p><b>Before</b>Three storeys and a temporary roof: a gap in the street wall</p></div>
+    <div><img src="images/p01-sketch-after.png" alt="Sketch of the rebuilt corner"><p><b>After</b>Rebuilt floors and roof restore the height of the street</p></div>
+  </div>
+  <div class="run">04<b>Resilience &amp; Renewal</b></div>
+</section>
+
+<section class="page mappage">
+  <img src="images/p01-site-map.png" alt="3D site map of the block around Kärntener Straße 26">
+  <div class="legend"><b>Site · Berlin-Schöneberg</b>
+    <span><i style="background:#a0564b"></i>Kärntener Straße 26</span><span><i style="background:#f0d21e"></i>Connecting entry road</span>
+  </div>
 </section>
 </div>
 
