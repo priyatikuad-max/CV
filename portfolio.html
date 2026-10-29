@@ -139,6 +139,27 @@
   .sheet .run { right: 18mm; }
   .proj-text .sec.end { margin-top: 9mm; padding-top: 5mm; border-top: 0.3pt solid #c9c1b6; }
 
+  /* Existing condition spread */
+  .proj-text .plan { position: absolute; left: 18mm; right: 22mm; bottom: 34mm; }
+  .proj-text .plan .pic { position: relative; }
+  .proj-text .plan img { width: 100%; display: block; mix-blend-mode: multiply; }
+  .proj-text .plan .nave { position: absolute; left: 16.9%; top: 11.6%; width: 37.2%; height: 67.4%;
+    background: rgba(168,153,138,.28); mix-blend-mode: multiply; }
+  .proj-text .plan p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.8pt; line-height: 1.45; color: #2a2a2a; margin: 3mm 0 0; }
+  .proj-text .plan p b { font-weight: 500; font-size: 6.6pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .photos { position: absolute; left: 22mm; right: 18mm; top: 20mm; display: grid; grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150mm 70mm; gap: 4mm; }
+  .photos .hero { grid-column: 1 / -1; }
+  .photos figure { margin: 0; position: relative; overflow: hidden; }
+  .photos figure.hero { grid-column: 1 / -1; }
+  .photos img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .photos figure span { position: absolute; left: 0; bottom: 0; background: var(--paper); padding: 1.2mm 2.2mm;
+    font-family: "Jost", sans-serif; font-weight: 500; font-size: 7pt; letter-spacing: 1pt; color: #8c7b6b; }
+  .photos-caps { position: absolute; left: 22mm; right: 18mm; top: 248mm; display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 6mm; }
+  .photos-caps p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.5pt; line-height: 1.45; color: #2a2a2a; margin: 0; }
+  .photos-caps b { font-weight: 500; color: #8c7b6b; margin-right: 1.5mm; }
+  .existing .run { right: 18mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -331,7 +352,44 @@
 </section>
 </div>
 
-<!-- Project 02 timber structure spread (pages 12–13) -->
+<!-- Project 02 existing condition spread (pages 12–13) -->
+<div class="spread">
+<section class="page proj-text">
+  <div class="band"></div>
+  <div class="wrap">
+    <p class="no">02 · Church Redesign</p>
+    <h2>Existing Condition</h2>
+    <p class="sub">A roofless nave in the heart of Zerbst</p>
+    <div class="sec" style="margin-top:10mm"><h3>History</h3><div>
+      <p>St. Bartholomäi was badly damaged during the Second World War. While the choir was later repaired and is still used as the winter church, the nave remains a roofless ruin. This open nave is the space where the new intervention takes place, inside the ruin, without touching its historic fabric.</p>
+    </div></div>
+    <div class="sec"><h3>Today</h3><div>
+      <p>Six round brick columns still carry the pointed arcades that once divided the nave into three aisles. The outer walls, built of brick and fieldstone, stand to their full height with their tall pointed windows, and the massive west wall closes the space. Without a roof, the nave has become an open, paved courtyard: impressive in scale, but exposed to the weather and without a roof to shelter everyday use.</p>
+    </div></div>
+  </div>
+  <div class="plan">
+    <div class="pic"><img src="images/p02-existing-plan.png" alt="Existing ground floor plan of St. Bartholomäi"><span class="nave"></span></div>
+    <p><b>Existing plan</b>The roofless nave (shaded), with the repaired winter church (Winterkirche) and high choir (Hoher Chor) to the east.</p>
+  </div>
+  <div class="run">12<b>Church Redesign</b></div>
+</section>
+
+<section class="page existing">
+  <div class="photos">
+    <figure class="hero"><img src="images/p02-nave.jpg" alt="The roofless nave looking west"><span>01</span></figure>
+    <figure><img src="images/p02-west-wall.jpg" alt="West wall and brick column"><span>02</span></figure>
+    <figure><img src="images/p02-choir-view.jpg" alt="The repaired eastern part seen from the nave"><span>03</span></figure>
+  </div>
+  <div class="photos-caps">
+    <p><b>01</b>The roofless nave looking west: six brick columns and pointed arcades, open to the sky.</p>
+    <p><b>02</b>The fieldstone west wall, seen between the arcades.</p>
+    <p><b>03</b>The repaired eastern part with its large glazed openings, seen from the ruined nave.</p>
+  </div>
+  <div class="run"><b>Portfolio</b>13</div>
+</section>
+</div>
+
+<!-- Project 02 timber structure spread (pages 14–15) -->
 <div class="spread">
 <section class="page proj-text">
   <div class="band"></div>
@@ -361,7 +419,7 @@
       <p>The project shows that a historic church can remain a sacred space while becoming an active part of everyday community life. New and old structures stand side by side, each readable on its own, together creating a place where the town can gather throughout the day, the week and the year.</p>
     </div></div>
   </div>
-  <div class="run">12<b>Church Redesign</b></div>
+  <div class="run">14<b>Church Redesign</b></div>
 </section>
 
 <section class="page sheet">
@@ -375,7 +433,7 @@
     <p><b>Centre right</b>Detail: every timber member shares a cross-section of 50 &times; 50 cm, built up from thin bonded layers of wood.</p>
     <p><b>Bottom right</b>Side view: the timber canopy rises freely above the historic walls, touching none of the old fabric.</p>
   </div>
-  <div class="run"><b>Portfolio</b>13</div>
+  <div class="run"><b>Portfolio</b>15</div>
 </section>
 </div>
 
