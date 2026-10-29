@@ -160,6 +160,34 @@
   .photos-caps b { font-weight: 500; color: #8c7b6b; margin-right: 1.5mm; }
   .existing .run { right: 18mm; }
 
+  /* Existing condition, single page */
+  .ex1 .shots { position: absolute; left: 0; right: 0; top: 0; height: 98mm; display: grid;
+    grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; gap: 1.5mm; }
+  .ex1 .shots figure { margin: 0; position: relative; overflow: hidden; }
+  .ex1 .shots figure.hero { grid-row: 1 / -1; }
+  .ex1 .shots img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ex1 .shots span { position: absolute; left: 0; bottom: 0; background: var(--paper); padding: 1.1mm 2.1mm;
+    font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.8pt; letter-spacing: 1pt; color: #8c7b6b; }
+  .ex1 .head { position: absolute; left: 18mm; right: 22mm; top: 106mm; }
+  .ex1 .head .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .ex1 .head h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .ex1 .head .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
+  .ex1 .cols { position: absolute; left: 18mm; right: 22mm; top: 136mm; display: grid;
+    grid-template-columns: 1fr 1fr 0.72fr; column-gap: 7mm; border-top: 0.4pt solid var(--ink); padding-top: 4mm; }
+  .ex1 .cols h3 { font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.6pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--stone); margin: 0 0 1.8mm; }
+  .ex1 .cols p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 8.4pt; line-height: 1.55; color: #2a2a2a; margin: 0; }
+  .ex1 .cols .idx p { font-size: 7.4pt; line-height: 1.4; margin: 0 0 2mm; }
+  .ex1 .cols .idx b { font-weight: 500; color: #8c7b6b; margin-right: 1.4mm; }
+  .ex1 .plan { position: absolute; left: 18mm; right: 30mm; top: 191mm; }
+  .ex1 .plan .pic { position: relative; }
+  .ex1 .plan img { width: 100%; display: block; mix-blend-mode: multiply; }
+  .ex1 .plan .nave { position: absolute; left: 16.9%; top: 11.6%; width: 37.2%; height: 67.4%; background: rgba(168,153,138,.3); mix-blend-mode: multiply; }
+  .ex1 .plan .tag { position: absolute; left: 16.9%; top: 2%; font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.2pt; letter-spacing: 1.3pt; text-transform: uppercase; color: #8c7b6b; }
+  .ex1 .run { left: 18mm; }
+  .diagram-page { background: #f4f2ee; }
+  .diagram-page img { position: absolute; left: 50%; top: 50%; width: 180mm; transform: translate(-50%, -52%); display: block; }
+  .diagram-page .run { right: 18mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -352,39 +380,37 @@
 </section>
 </div>
 
-<!-- Project 02 existing condition spread (pages 12–13) -->
+<!-- Project 02: existing condition (page 12) facing the programme diagram (page 13) -->
 <div class="spread">
-<section class="page proj-text">
-  <div class="band"></div>
-  <div class="wrap">
+<section class="page ex1">
+  <div class="shots">
+    <figure class="hero"><img src="images/p02-nave.jpg" alt="The roofless nave looking west" style="object-position:50% 58%"><span>01</span></figure>
+    <figure><img src="images/p02-west-wall.jpg" alt="West wall and brick column" style="object-position:50% 45%"><span>02</span></figure>
+    <figure><img src="images/p02-choir-view.jpg" alt="The repaired eastern part seen from the nave"><span>03</span></figure>
+  </div>
+  <div class="head">
     <p class="no">02 · Church Redesign</p>
     <h2>Existing Condition</h2>
     <p class="sub">A roofless nave in the heart of Zerbst</p>
-    <div class="sec" style="margin-top:10mm"><h3>History</h3><div>
-      <p>St. Bartholomäi was badly damaged during the Second World War. While the choir was later repaired and is still used as the winter church, the nave remains a roofless ruin. This open nave is the space where the new intervention takes place, inside the ruin, without touching its historic fabric.</p>
-    </div></div>
-    <div class="sec"><h3>Today</h3><div>
-      <p>Six round brick columns still carry the pointed arcades that once divided the nave into three aisles. The outer walls, built of brick and fieldstone, stand to their full height with their tall pointed windows, and the massive west wall closes the space. Without a roof, the nave has become an open, paved courtyard: impressive in scale, but exposed to the weather and without a roof to shelter everyday use.</p>
-    </div></div>
+  </div>
+  <div class="cols">
+    <div><h3>History</h3><p>St. Bartholomäi was badly damaged during the Second World War. While the choir was later repaired and is still used as the winter church, the nave remains a roofless ruin. This open nave is the space where the new intervention takes place, inside the ruin, without touching its historic fabric.</p></div>
+    <div><h3>Today</h3><p>Six round brick columns still carry the pointed arcades that once divided the nave into three aisles. The outer walls of brick and fieldstone stand to their full height, and the massive west wall closes the space. Without a roof, the nave has become an open, paved courtyard: impressive in scale, but exposed to the weather.</p></div>
+    <div class="idx"><h3>Images</h3>
+      <p><b>01</b>The roofless nave looking west</p>
+      <p><b>02</b>The fieldstone west wall</p>
+      <p><b>03</b>The repaired eastern part, seen from the nave</p>
+      <p><b>Plan</b>Existing ground floor; the roofless nave is shaded</p>
+    </div>
   </div>
   <div class="plan">
     <div class="pic"><img src="images/p02-existing-plan.png" alt="Existing ground floor plan of St. Bartholomäi"><span class="nave"></span></div>
-    <p><b>Existing plan</b>The roofless nave (shaded), with the repaired winter church (Winterkirche) and high choir (Hoher Chor) to the east.</p>
   </div>
   <div class="run">12<b>Church Redesign</b></div>
 </section>
 
-<section class="page existing">
-  <div class="photos">
-    <figure class="hero"><img src="images/p02-nave.jpg" alt="The roofless nave looking west"><span>01</span></figure>
-    <figure><img src="images/p02-west-wall.jpg" alt="West wall and brick column"><span>02</span></figure>
-    <figure><img src="images/p02-choir-view.jpg" alt="The repaired eastern part seen from the nave"><span>03</span></figure>
-  </div>
-  <div class="photos-caps">
-    <p><b>01</b>The roofless nave looking west: six brick columns and pointed arcades, open to the sky.</p>
-    <p><b>02</b>The fieldstone west wall, seen between the arcades.</p>
-    <p><b>03</b>The repaired eastern part with its large glazed openings, seen from the ruined nave.</p>
-  </div>
+<section class="page diagram-page">
+  <img src="diagrams/programme.png" alt="Programme diagram: daily, weekly and seasonal uses">
   <div class="run"><b>Portfolio</b>13</div>
 </section>
 </div>
