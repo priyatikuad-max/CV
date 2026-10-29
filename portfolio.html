@@ -200,6 +200,23 @@
   .diagram-page img { position: absolute; left: 50%; top: 50%; width: 180mm; transform: translate(-50%, -52%); display: block; }
   .diagram-page .run { right: 18mm; }
 
+  /* Project closing spread: interior + conclusion (left), street view (right) */
+  .fin .wrap { position: absolute; left: 18mm; right: 22mm; top: 24mm; }
+  .fin .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .fin h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .fin .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
+  .fin .concl { display: grid; grid-template-columns: 26mm 1fr; margin-top: 7mm; padding-top: 4mm; border-top: 0.4pt solid var(--ink); }
+  .fin .concl h3 { font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.6pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--stone); margin: 0; padding-top: .8mm; }
+  .fin .concl p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a; margin: 0; }
+  .fin .int { position: absolute; left: 0; right: 0; bottom: 0; height: 196mm; }
+  .fin img, .street img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .chip { position: absolute; background: var(--paper); padding: 1.6mm 3mm; font-family: "Jost", sans-serif; font-weight: 300;
+    font-size: 7.4pt; color: #2a2a2a; max-width: 150mm; }
+  .chip b { font-weight: 500; font-size: 6.4pt; color: #8c7b6b; letter-spacing: 1.4pt; text-transform: uppercase; margin-right: 2mm; }
+  .fin .chip { left: 18mm; bottom: 10mm; }
+  .street .chip { left: 22mm; bottom: 10mm; }
+  .fin .run, .street .run { display: none; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -467,9 +484,6 @@
     <div class="sec"><h3>Light</h3><div>
       <p>A band of glazing between the old walls and the new roof lets daylight into the nave. The branching ribs filter this light, casting changing patterns of light and shadow across the old walls, while the warm timber gives the ruin a welcoming atmosphere for worship, gathering and reading.</p>
     </div></div>
-    <div class="sec end"><h3>Conclusion</h3><div>
-      <p>The project shows that a historic church can remain a sacred space while becoming an active part of everyday community life. New and old structures stand side by side, each readable on its own, together creating a place where the town can gather throughout the day, the week and the year.</p>
-    </div></div>
   </div>
   <div class="run">14<b>Church Redesign</b></div>
 </section>
@@ -486,6 +500,27 @@
     <p><b>Bottom right</b>Side view: the timber canopy rises freely above the historic walls, touching none of the old fabric.</p>
   </div>
   <div class="run"><b>Portfolio</b>15</div>
+</section>
+</div>
+
+<!-- Project 02 closing spread (pages 16–17) -->
+<div class="spread">
+<section class="page fin">
+  <div class="wrap">
+    <p class="no">02 · Church Redesign</p>
+    <h2>A Place to Gather</h2>
+    <p class="sub">Sacred space and everyday life under one roof</p>
+    <div class="concl"><h3>Conclusion</h3>
+      <p>The project shows that a historic church can remain a sacred space while becoming an active part of everyday community life. New and old structures stand side by side, each readable on its own, together creating a place where the town can gather throughout the day, the week and the year.</p>
+    </div>
+  </div>
+  <div class="int"><img src="images/p02-interior.jpg" alt="Interior view under the timber canopy"></div>
+  <p class="chip"><b>Interior</b>The timber canopy rises above the historic brick arcades, with the library gallery on both sides</p>
+</section>
+
+<section class="page street">
+  <img src="images/p02-street.jpg" alt="Street view of St. Bartholomäi with its new roof" style="object-position:45% 50%">
+  <p class="chip"><b>Street view</b>The new roof rests on the timber structure above the old walls, with a band of light between them</p>
 </section>
 </div>
 
