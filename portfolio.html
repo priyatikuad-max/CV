@@ -102,6 +102,30 @@
   .contents .run { right: 20mm; }
 
 
+  /* Project opening spread: text page (left) + full-bleed image page (right) */
+  .proj-text .band { position: absolute; left: 18mm; top: 0; width: 9mm; height: 20mm; background: var(--stone); }
+  .proj-text .wrap { position: absolute; left: 18mm; right: 22mm; top: 30mm; }
+  .proj-text .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 8pt; letter-spacing: 3pt; color: var(--stone); margin: 0; }
+  .proj-text h2 { font-size: 30pt; font-weight: 400; line-height: 1.05; margin: 3mm 0 0; letter-spacing: .3pt; }
+  .proj-text .sub { font-size: 13pt; font-style: italic; margin: 1.5mm 0 0; color: #333; }
+  .proj-text .meta { display: grid; grid-template-columns: 26mm 1fr; row-gap: 1.2mm; margin: 8mm 0 0; padding: 4mm 0;
+    border-top: 0.4pt solid var(--ink); border-bottom: 0.3pt solid #c9c1b6; }
+  .proj-text .meta dt { font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.8pt; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--stone); padding-top: .4mm; }
+  .proj-text .meta dd { font-family: "Jost", sans-serif; font-weight: 400; font-size: 8.3pt; letter-spacing: .3pt; margin: 0; color: var(--ink); }
+  .proj-text .lead { font-size: 12.5pt; font-style: italic; line-height: 1.4; margin: 8mm 0 0; color: #222; }
+  .proj-text .sec { display: grid; grid-template-columns: 26mm 1fr; margin: 7mm 0 0; }
+  .proj-text .sec h3 { font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.8pt; letter-spacing: 1.6pt; text-transform: uppercase; color: var(--stone); margin: 0; padding-top: .9mm; }
+  .proj-text .sec p, .proj-text .sec li { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a; margin: 0; }
+  .proj-text .sec p + p, .proj-text .sec p + ul { margin-top: 2.2mm; }
+  .proj-text .sec ul { list-style: none; margin: 0; padding: 0; }
+  .proj-text .sec li { padding-left: 15mm; text-indent: -15mm; }
+  .proj-text .sec li b { font-weight: 500; display: inline-block; width: 15mm; text-indent: 0; }
+  .proj-text .run { left: 18mm; }
+  .proj-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 54% 50%; }
+  .proj-image .cap { position: absolute; left: 22mm; bottom: 14mm; max-width: 120mm; background: var(--paper);
+    padding: 2.4mm 3.5mm; font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.8pt; color: #333; letter-spacing: .2pt; }
+  .proj-image .cap span { color: var(--mist); margin-right: 2.5mm; font-weight: 500; letter-spacing: 1pt; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -252,6 +276,45 @@
   </ol>
 
   <div class="run"><b>Portfolio</b>03</div>
+</section>
+</div>
+
+<!-- Project 02 opening spread (pages 10–11) -->
+<div class="spread">
+<section class="page proj-text">
+  <div class="band"></div>
+  <div class="wrap">
+    <p class="no">02</p>
+    <h2>Church Redesign</h2>
+    <p class="sub">A sacred space, reimagined</p>
+    <dl class="meta">
+      <dt>Project</dt><dd>Academic · Master&rsquo;s Studio</dd>
+      <dt>Mentor</dt><dd>Prof. Dr. Rudolf Lückmann</dd>
+      <dt>Year</dt><dd>2024</dd>
+      <dt>Location</dt><dd>St. Bartholomäi, Zerbst, Saxony-Anhalt, Germany</dd>
+    </dl>
+    <p class="lead">This project transforms St. Bartholomäi in Zerbst into a place that serves both worship and community life. Inside the historic walls, a new timber structure inspired by the form of trees creates an open, light-filled interior, without touching the historic fabric.</p>
+    <div class="sec"><h3>Context</h3><div>
+      <p>St. Bartholomäi was badly damaged during the Second World War. While parts of the church were later repaired, the nave has remained a roofless ruin, its walls, arches and brick piers standing open to the sky. At the same time, the town lacks shared places where people can meet. The task was to design within this historic setting, respecting its character while giving the church a new role in everyday community life.</p>
+    </div></div>
+    <div class="sec"><h3>Concept</h3><div>
+      <p>The building is conceived as both a place of worship and a welcoming, inclusive space for the whole community. Its programme follows three rhythms of use:</p>
+      <ul>
+        <li><b>Daily</b>Prayer, community library, co-working and coffee shop</li>
+        <li><b>Weekly</b>Sunday worship, after-school programmes, community classes in arts and parenting, and support groups</li>
+        <li><b>Seasonal</b>Holiday markets and youth camps</li>
+      </ul>
+    </div></div>
+    <div class="sec"><h3>Design</h3><div>
+      <p>The key principle was to add new structure without touching the old. A free-standing timber structure, shaped like branching trees, rises inside the historic walls and carries a new roof, recalling the rhythm of Gothic vaults in a contemporary material. The altar is moved to the centre of the nave so the space gathers around it. A new upper floor houses a community library, a quiet place for reading above the busy gathering space below. A ramp connects the two levels, making the whole building universally accessible, while kitchen and toilets sit at the sides to keep the central space open.</p>
+    </div></div>
+  </div>
+  <div class="run">10<b>Church Redesign</b></div>
+</section>
+
+<section class="page proj-image">
+  <img src="images/p02-aerial.jpg" alt="Aerial view of St. Bartholomäi in Zerbst">
+  <p class="cap"><span>02</span>Aerial view: St. Bartholomäi within the historic town centre of Zerbst</p>
 </section>
 </div>
 
