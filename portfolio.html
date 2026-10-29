@@ -230,6 +230,20 @@
   .mappage .legend i { display: inline-block; width: 3mm; height: 3mm; vertical-align: -.4mm; margin-right: 1.8mm; font-style: normal; }
   .mappage .legend span { margin-right: 5mm; white-space: nowrap; }
 
+  /* Project 01 "Closing the Gap" page */
+  .gap .wrap { position: absolute; left: 22mm; right: 18mm; top: 24mm; }
+  .gap .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .gap h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .gap .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
+  .gap .intro { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a;
+    margin: 6mm 0 0; padding-top: 4mm; border-top: 0.4pt solid var(--ink); max-width: 130mm; }
+  .gap .sk { position: absolute; left: 22mm; width: 130mm; margin: 0; }
+  .gap .sk.one { top: 96mm; } .gap .sk.two { top: 186mm; }
+  .gap .sk img { width: 100%; display: block; mix-blend-mode: multiply; }
+  .gap figcaption { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.6pt; color: #2a2a2a; margin-top: 2mm; }
+  .gap figcaption b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .gap .run { right: 18mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -408,18 +422,34 @@
     </div></div>
     <p class="lead" style="margin-top:7mm">The building returns to the height of its neighbours and to its 1899 floor area, closing the gap left by the war with a new look inspired by its traditional appearance.</p>
   </div>
-  <div class="sketches">
-    <div><img src="images/p01-sketch-before.png" alt="Sketch of the corner today"><p><b>Before</b>Three storeys and a temporary roof: a gap in the street wall</p></div>
-    <div><img src="images/p01-sketch-after.png" alt="Sketch of the rebuilt corner"><p><b>After</b>Rebuilt floors and roof restore the height of the street</p></div>
-  </div>
   <div class="run">04<b>Resilience &amp; Renewal</b></div>
 </section>
 
+<section class="page street">
+  <img src="images/p01-aerial.jpg" alt="Aerial view of the rebuilt corner at Kärntener Straße 26" style="object-position:100% 50%">
+  <p class="chip"><b>Aerial view</b>The rebuilt corner with its new roof floor and gables restores the height of the block and closes the gap in the street wall</p>
+</section>
+</div>
+
+<!-- Project 01 context spread (pages 06–07): site map and the corner before/after -->
+<div class="spread">
 <section class="page mappage">
   <img src="images/p01-site-map.png" alt="3D site map of the block around Kärntener Straße 26">
   <div class="legend"><b>Site · Berlin-Schöneberg</b>
     <span><i style="background:#a0564b"></i>Kärntener Straße 26</span><span><i style="background:#f0d21e"></i>Connecting entry road</span>
   </div>
+</section>
+
+<section class="page gap">
+  <div class="wrap">
+    <p class="no">01 · Resilience &amp; Renewal</p>
+    <h2>Closing the Gap</h2>
+    <p class="sub">The corner, before and after</p>
+    <p class="intro">In 1899 the corner stood five storeys high with a roof floor and decorated gables. War damage reduced it to three storeys under a temporary roof. The design rebuilds the two lost floors and the roof, returning the corner to the height of its neighbours.</p>
+  </div>
+  <figure class="sk one"><img src="images/p01-sketch-before.png" alt="Sketch of the corner today"><figcaption><b>Before</b>Three storeys and a temporary roof: a gap in the street wall</figcaption></figure>
+  <figure class="sk two"><img src="images/p01-sketch-after.png" alt="Sketch of the rebuilt corner"><figcaption><b>After</b>Rebuilt floors and roof restore the height of the street</figcaption></figure>
+  <div class="run"><b>Portfolio</b>07</div>
 </section>
 </div>
 
