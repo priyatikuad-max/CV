@@ -178,12 +178,24 @@
   .ex1 .cols p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 8.4pt; line-height: 1.55; color: #2a2a2a; margin: 0; }
   .ex1 .cols .idx p { font-size: 7.4pt; line-height: 1.4; margin: 0 0 2mm; }
   .ex1 .cols .idx b { font-weight: 500; color: #8c7b6b; margin-right: 1.4mm; }
-  .ex1 .plan { position: absolute; left: 18mm; right: 30mm; top: 191mm; }
+  .ex1 .plan { position: absolute; left: 18mm; width: 156mm; top: 191mm; }
   .ex1 .plan .pic { position: relative; }
   .ex1 .plan img { width: 100%; display: block; mix-blend-mode: multiply; }
   .ex1 .plan .nave { position: absolute; left: 16.9%; top: 11.6%; width: 37.2%; height: 67.4%; background: rgba(168,153,138,.3); mix-blend-mode: multiply; }
   .ex1 .plan .tag { position: absolute; left: 16.9%; top: 2%; font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.2pt; letter-spacing: 1.3pt; text-transform: uppercase; color: #8c7b6b; }
   .ex1 .run { left: 18mm; }
+  .ex1 .shots.one { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+  .ex1 .shots.one figure.hero { grid-row: auto; }
+  .ex1 .shots.two { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
+  .ex1 .pcap { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; color: #2a2a2a; margin: 2mm 0 0; }
+  .ex1 .pcap b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.3pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .ex2 .head, .ex2 .cols { left: 22mm; right: 18mm; }
+  .ex2 .cols.two { grid-template-columns: 2fr 1fr; }
+  .ex2 .wplan { position: absolute; left: 22mm; width: 168mm; top: 185mm;
+    -webkit-mask-image: linear-gradient(transparent, #000 9%); mask-image: linear-gradient(transparent, #000 9%); }
+  .ex2 .wplan img { width: 100%; display: block; mix-blend-mode: multiply; }
+  .ex2 .wcap { position: absolute; left: 22mm; top: 262.5mm; background: rgba(244,242,238,.85); padding: 1mm 2mm; margin: 0; }
+  .ex2 .run { right: 18mm; left: auto; }
   .diagram-page { background: #f4f2ee; }
   .diagram-page img { position: absolute; left: 50%; top: 50%; width: 180mm; transform: translate(-50%, -52%); display: block; }
   .diagram-page .run { right: 18mm; }
@@ -380,13 +392,11 @@
 </section>
 </div>
 
-<!-- Project 02: existing condition (page 12) facing the programme diagram (page 13) -->
+<!-- Project 02: existing (page 12) and proposed (page 13) ground floor, plans at the same scale and axis -->
 <div class="spread">
 <section class="page ex1">
-  <div class="shots">
+  <div class="shots one">
     <figure class="hero"><img src="images/p02-nave.jpg" alt="The roofless nave looking west" style="object-position:50% 58%"><span>01</span></figure>
-    <figure><img src="images/p02-west-wall.jpg" alt="West wall and brick column" style="object-position:50% 45%"><span>02</span></figure>
-    <figure><img src="images/p02-choir-view.jpg" alt="The repaired eastern part seen from the nave"><span>03</span></figure>
   </div>
   <div class="head">
     <p class="no">02 · Church Redesign</p>
@@ -400,17 +410,33 @@
       <p><b>01</b>The roofless nave looking west</p>
       <p><b>02</b>The fieldstone west wall</p>
       <p><b>03</b>The repaired eastern part, seen from the nave</p>
-      <p><b>Plan</b>Existing ground floor; the roofless nave is shaded</p>
     </div>
   </div>
   <div class="plan">
     <div class="pic"><img src="images/p02-existing-plan.png" alt="Existing ground floor plan of St. Bartholomäi"><span class="nave"></span></div>
+    <p class="pcap"><b>Existing ground floor</b>The roofless nave is shaded</p>
   </div>
   <div class="run">12<b>Church Redesign</b></div>
 </section>
 
-<section class="page diagram-page">
-  <img src="diagrams/programme.png" alt="Programme diagram: daily, weekly and seasonal uses">
+<section class="page ex1 ex2">
+  <div class="shots two">
+    <figure><img src="images/p02-west-wall.jpg" alt="West wall and brick column" style="object-position:50% 40%"><span>02</span></figure>
+    <figure><img src="images/p02-choir-view.jpg" alt="The repaired eastern part seen from the nave"><span>03</span></figure>
+  </div>
+  <div class="head">
+    <p class="no">&nbsp;</p>
+    <h2>Proposed Ground Floor</h2>
+    <p class="sub">One shared hall inside the ruin</p>
+  </div>
+  <div class="cols two">
+    <div><h3>Layout</h3><p>The nave becomes one shared hall for worship and community events. Rows of seating face a new semicircular altar platform at the east end of the nave, under the arch to the winter church, placing the altar at the centre of the whole church. Kitchen and toilets sit in the north-east corner, keeping the hall open.</p></div>
+    <div class="idx"><h3>Plans</h3>
+      <p>Both plans are shown at the same scale and on the same axis, so the existing and proposed layouts can be compared directly.</p>
+    </div>
+  </div>
+  <div class="wplan"><img src="images/p02-proposed-plan.jpg" alt="Proposed ground floor plan in watercolour"></div>
+  <p class="pcap wcap"><b>Proposed ground floor</b>Seating, altar platform and the church in its green setting</p>
   <div class="run"><b>Portfolio</b>13</div>
 </section>
 </div>
