@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Programme Diagram – Church Redesign</title>
+<style>
+  @page { size: 180mm 200mm; margin: 0; }
+  @font-face { font-family: "EB Garamond"; font-style: italic; src: url(../fonts/eb-garamond-latin-400-italic.woff2) format("woff2"); }
+  @font-face { font-family: "EB Garamond"; font-style: normal; src: url(../fonts/eb-garamond-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Jost"; font-weight: 300; src: url(../fonts/jost-latin-300-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Jost"; font-weight: 500; src: url(../fonts/jost-latin-500-normal.woff2) format("woff2"); }
+  html, body { margin: 0; background: #f4f2ee; }
+  svg { display: block; width: 180mm; height: 200mm; }
+  .kicker { font-family: Jost, sans-serif; font-weight: 500; font-size: 2.7px; letter-spacing: 1.1px; fill: #a8998a; }
+  .title { font-family: "EB Garamond", serif; font-size: 9px; letter-spacing: 1.6px; fill: #1c1c1c; }
+  .ring { font-family: Jost, sans-serif; font-weight: 500; font-size: 2.5px; letter-spacing: .9px; text-anchor: middle;
+          paint-order: stroke; stroke: #f4f2ee; stroke-width: 2.2px; }
+  .item { font-family: Jost, sans-serif; font-weight: 300; font-size: 3.3px; fill: #1c1c1c;
+          paint-order: stroke; stroke: #f4f2ee; stroke-width: 1.6px; stroke-linejoin: round; }
+  .centre { font-family: "EB Garamond", serif; font-style: italic; font-size: 4.6px; fill: #1c1c1c; text-anchor: middle; }
+  .small { font-family: Jost, sans-serif; font-weight: 300; font-size: 2.4px; letter-spacing: .6px; fill: #8a8a8a; text-anchor: middle; }
+  .note { font-family: "EB Garamond", serif; font-style: italic; font-size: 4px; fill: #444; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 180 200" aria-label="Programme diagram: daily, weekly and seasonal uses of the church">
+    <text x="12" y="13" class="kicker">CHURCH REDESIGN · PROGRAMME</text>
+    <text x="12" y="22" class="title">A BUILDING IN USE</text>
+    <circle cx="90" cy="96" r="26" fill="none" stroke="#1c1c1c" stroke-width="0.35" />
+    <circle cx="90" cy="96" r="46" fill="none" stroke="#8c7b6b" stroke-width="0.45" />
+    <circle cx="90" cy="96" r="66" fill="none" stroke="#a8998a" stroke-width="0.45" stroke-dasharray="1.2 1.2"/>
+    <text x="90" y="71.1" class="ring" fill="#1c1c1c">DAILY</text>
+    <circle cx="109.92" cy="79.29" r="1.3" fill="#1c1c1c" stroke="#1c1c1c" stroke-width=".45"/>
+    <text x="112.52" y="78.30" text-anchor="start" class="item">Prayer</text>
+    <circle cx="109.92" cy="112.71" r="1.3" fill="#1c1c1c" stroke="#1c1c1c" stroke-width=".45"/>
+    <text x="112.52" y="116.10" text-anchor="start" class="item">Community library</text>
+    <circle cx="70.08" cy="112.71" r="1.3" fill="#1c1c1c" stroke="#1c1c1c" stroke-width=".45"/>
+    <text x="67.48" y="116.10" text-anchor="end" class="item">Co-working</text>
+    <circle cx="70.08" cy="79.29" r="1.3" fill="#1c1c1c" stroke="#1c1c1c" stroke-width=".45"/>
+    <text x="67.48" y="78.30" text-anchor="end" class="item">Coffee shop</text>
+    <text x="90" y="51.1" class="ring" fill="#8c7b6b">WEEKLY</text>
+    <circle cx="136.00" cy="96.00" r="1.3" fill="#8c7b6b" stroke="#8c7b6b" stroke-width=".45"/>
+    <text x="139.40" y="97.20" text-anchor="start" class="item">Sunday worship</text>
+    <circle cx="113.00" cy="135.84" r="1.3" fill="#8c7b6b" stroke="#8c7b6b" stroke-width=".45"/>
+    <text x="114.70" y="139.98" text-anchor="start" class="item">After-school programmes</text>
+    <circle cx="67.00" cy="135.84" r="1.3" fill="#8c7b6b" stroke="#8c7b6b" stroke-width=".45"/>
+    <text x="65.30" y="139.98" text-anchor="end" class="item">Community classes</text>
+    <circle cx="44.00" cy="96.00" r="1.3" fill="#8c7b6b" stroke="#8c7b6b" stroke-width=".45"/>
+    <text x="40.60" y="97.20" text-anchor="end" class="item">Support groups</text>
+    <text x="90" y="31.1" class="ring" fill="#a8998a">SEASONAL</text>
+    <circle cx="147.16" cy="129.00" r="1.3" fill="#f4f2ee" stroke="#a8998a" stroke-width=".45"/>
+    <text x="150.10" y="131.90" text-anchor="start" class="item">Holiday markets</text>
+    <circle cx="32.84" cy="129.00" r="1.3" fill="#f4f2ee" stroke="#a8998a" stroke-width=".45"/>
+    <text x="29.90" y="131.90" text-anchor="end" class="item">Youth camps</text>
+    <!-- centre: pointed arch of the church -->
+    <path d="M84 98 V93 Q84 88 90 85 Q96 88 96 93 V98" fill="none" stroke="#1c1c1c" stroke-width=".4"/>
+    <text x="90" y="104" class="centre">St. Bartholomäi</text>
+    <text x="90" y="107.5" class="small">ZERBST</text>
+    <line x1="12" y1="178" x2="168" y2="178" stroke="#c9c1b6" stroke-width=".25"/>
+    <circle cx="14" cy="186" r="1.2" fill="#1c1c1c"/><text x="17" y="187.1" class="item">Daily</text>
+    <circle cx="36" cy="186" r="1.2" fill="#8c7b6b" stroke="#8c7b6b" stroke-width=".45"/><text x="39" y="187.1" class="item">Weekly</text>
+    <circle cx="60" cy="186" r="1.2" fill="#f4f2ee" stroke="#a8998a" stroke-width=".45"/><text x="63" y="187.1" class="item">Seasonal</text>
+    <text x="12" y="194" class="note">Worship and community life throughout the day, the week and the year</text>
+</svg>
+</body>
+</html>
