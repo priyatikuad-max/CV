@@ -268,6 +268,36 @@
   .renders .cap { position: absolute; left: 22mm; right: 18mm; top: 256mm; margin: 0; }
   .renders .run { right: 18mm; }
 
+  /* Shared image placeholder (frame for drawings still to come) */
+  .ph { position: absolute; border: .3mm dashed #c9c1b6; background: rgba(255,255,255,.45); display: flex; align-items: center; justify-content: center;
+    font-family: "Jost", sans-serif; font-weight: 500; font-size: 6.6pt; letter-spacing: 1.5pt; text-transform: uppercase; color: #8d8276; }
+  /* Site and context page */
+  .site1 .wrap, .roof1 .wrap { position: absolute; left: 18mm; right: 22mm; top: 24mm; }
+  .site1 .no, .roof1 .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .site1 h2, .roof1 h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .site1 .sub, .roof1 .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
+  .site1 .maps { position: absolute; left: 18mm; right: 22mm; top: 64mm; height: 46mm; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .site1 .maps .ph { position: static; }
+  .site1 .mcap, .roof1 .rcap { position: absolute; left: 18mm; font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; color: #2a2a2a; margin: 0; }
+  .site1 .mcap { top: 112mm; }
+  .site1 .mcap b, .roof1 .rcap b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .site1 .lmap { left: 18mm; top: 122mm; width: 78mm; height: 140mm; }
+  .site1 .marks { position: absolute; left: 104mm; right: 22mm; top: 122mm; }
+  .site1 .marks div { margin-bottom: 4.2mm; }
+  .site1 .marks h4 { font-family: "EB Garamond", serif; font-weight: 400; font-size: 12pt; margin: 0 0 .8mm; }
+  .site1 .marks h4 i { font-family: "Jost", sans-serif; font-style: normal; font-weight: 500; font-size: 7pt; color: #8c7b6b; margin-right: 2mm; }
+  .site1 .marks p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.8pt; line-height: 1.45; color: #2a2a2a; margin: 0; }
+  .site1 .marks .site h4, .site1 .marks .site h4 i { color: #a0564b; }
+  .site1 .run, .roof1 .run { left: 18mm; }
+  .plans1.rightpage .wrap { left: 22mm; right: 18mm; }
+  .plans1.rightpage .pl.a { left: 22mm; } .plans1.rightpage .pl.b { left: 112mm; } .plans1.rightpage .pl.c { left: 22mm; }
+  .plans1.rightpage .run { left: auto; right: 18mm; }
+  /* Roofline page */
+  .roof1 .intro { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a;
+    margin: 6mm 0 0; padding-top: 4mm; border-top: 0.4pt solid var(--ink); }
+  .roof1 .elev { left: 18mm; right: 22mm; top: 106mm; height: 82mm; }
+  .roof1 .gab { left: 18mm; right: 22mm; top: 200mm; height: 61mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -398,22 +428,22 @@
     <li>
       <div class="frame thumb"><span class="label">Image</span><img src="images/p02.jpg" alt="" onerror="this.remove()"><span class="no">02</span></div>
       <div class="txt"><p class="t">Church Redesign</p><p class="s">A sacred space, reimagined</p></div>
-      <span class="pg">10</span>
+      <span class="pg">12</span>
     </li>
     <li>
       <div class="frame thumb"><span class="label">Image</span><img src="images/p03.jpg" alt="" onerror="this.remove()"><span class="no">03</span></div>
       <div class="txt"><p class="t">Heritage in the City</p><p class="s">Integrating urban heritage into the city fabric</p></div>
-      <span class="pg">16</span>
+      <span class="pg">20</span>
     </li>
     <li>
       <div class="frame thumb"><span class="label">Image</span><img src="images/p04.jpg" alt="" onerror="this.remove()"><span class="no">04</span></div>
       <div class="txt"><p class="t">Cultural Centre</p><p class="s">A place for community, art and gathering</p></div>
-      <span class="pg">22</span>
+      <span class="pg">26</span>
     </li>
     <li>
       <div class="frame thumb"><span class="label">Image</span><img src="images/p05.jpg" alt="" onerror="this.remove()"><span class="no">05</span></div>
       <div class="txt"><p class="t">Half-Timber Architecture</p><p class="s">An analysis of timber-frame buildings in Germany</p></div>
-      <span class="pg">28</span>
+      <span class="pg">32</span>
     </li>
   </ol>
 
@@ -477,9 +507,32 @@
 </section>
 </div>
 
-<!-- Project 01 plans + renders spread (pages 08–09) -->
+<!-- Project 01 site + plans spread (pages 08–09) -->
 <div class="spread">
-<section class="page plans1">
+<section class="page site1">
+  <div class="wrap">
+    <p class="no">01 · Resilience &amp; Renewal</p>
+    <h2>Site and Context</h2>
+    <p class="sub">Schöneberg around Kärntener Straße</p>
+    <div style="border-top:0.4pt solid #1c1c1c;margin-top:6mm"></div>
+  </div>
+  <div class="maps">
+    <div class="ph">Historical map 1</div><div class="ph">Historical map 2</div><div class="ph">Historical map 3</div>
+  </div>
+  <p class="mcap"><b>Historical maps</b>[years, e.g. 1899 · 1945 · today]</p>
+  <div class="ph lmap">Landmarks map</div>
+  <div class="marks">
+    <div><h4><i>1</i>Rudolph-Wilde-Park</h4><p>An urban oasis laid out between 1906 and 1914 around the U-Bahn station Rathaus Schöneberg, offering a peaceful green ribbon loved by locals for walking, reading and playing boules.</p></div>
+    <div><h4><i>2</i>Rathaus Schöneberg</h4><p>Seat of West Berlin&rsquo;s government from 1949 to 1990, office of the Governing Mayor and meeting place of the House of Representatives, and a global symbol of the divided city&rsquo;s desire for freedom.</p></div>
+    <div class="site"><h4><i>&#9679;</i>Project site</h4><p>Kärntener Straße 26</p></div>
+    <div><h4><i>3</i>Innsbrucker Platz</h4><p>A key transport hub since the opening of its U-Bahn and S-Bahn stations, linking central Berlin with the city&rsquo;s southern districts.</p></div>
+    <div><h4><i>4</i>Dominicus-Sportplatz</h4><p>A sports ground with a football pitch, athletics track and seating for around 4,500 spectators, established in 1920 and modernised in 2019/2020.</p></div>
+    <div><h4><i>5</i>Natur-Park Schöneberger Südgelände</h4><p>A former railway yard turned nature reserve and art park, where wild vegetation grows among tracks, a steam locomotive and a water tower.</p></div>
+  </div>
+  <div class="run">08<b>Resilience &amp; Renewal</b></div>
+</section>
+
+<section class="page plans1 rightpage">
   <div class="wrap">
     <p class="no">01 · Resilience &amp; Renewal</p>
     <h2>From Existing to Proposed</h2>
@@ -489,7 +542,24 @@
   <figure class="pl a"><img src="images/p01-plan-existing-a.png" alt="Existing plan"><figcaption><b>Existing</b>Ground floor</figcaption></figure>
   <figure class="pl b"><img src="images/p01-plan-existing-b.png" alt="Existing plan"><figcaption><b>Existing</b>Upper floor</figcaption></figure>
   <figure class="pl c"><img src="images/p01-plan-proposed.png" alt="Proposed ground floor"><figcaption><b>Proposed</b>Ground floor: restaurant at the corner, opening into the shared courtyard</figcaption></figure>
-  <div class="run">08<b>Resilience &amp; Renewal</b></div>
+  <div class="run"><b>Portfolio</b>09</div>
+</section>
+</div>
+
+<!-- Project 01 roofline + views spread (pages 12–13) -->
+<div class="spread">
+<section class="page roof1">
+  <div class="wrap">
+    <p class="no">01 · Resilience &amp; Renewal</p>
+    <h2>The Roofline</h2>
+    <p class="sub">Gables abstracted from the 1899 façade</p>
+    <p class="intro">The 1899 façade was crowned by a rhythm of decorated gables, lost with the war damage to the corner. The new design takes this rhythm as its starting point: the gables are studied, simplified and repeated, then placed along the new roof floor. They complete the roofline of the street again, in a contemporary language that recalls the building&rsquo;s original character.</p>
+  </div>
+  <div class="ph elev">Front elevation</div>
+  <p class="rcap" style="top:190mm"><b>Front elevation</b>The street façade with the rebuilt corner and new roof floor</p>
+  <div class="ph gab">Gable studies</div>
+  <p class="rcap" style="top:263mm"><b>Gable study</b>From the historic gable to its abstracted form, and variations tested along the roofline</p>
+  <div class="run">10<b>Resilience &amp; Renewal</b></div>
 </section>
 
 <section class="page renders">
@@ -497,7 +567,7 @@
   <div class="small l"><img src="images/p01-render-gables.jpg" alt="Detail of the new gables"></div>
   <div class="small r"><img src="images/p01-render-rear.jpg" alt="View of the roof floor at sunset"></div>
   <p class="cap"><b>Views</b>The new design for Kärntener Straße 26: a restaurant on the ground floor, residential floors above, and the rebuilt upper floors and roof. Above: street view at dusk. Below: the new gables and the roof floor at sunset.</p>
-  <div class="run"><b>Portfolio</b>09</div>
+  <div class="run"><b>Portfolio</b>11</div>
 </section>
 </div>
 
@@ -531,7 +601,7 @@
       <p>The key principle was to add new structure without touching the old. A free-standing timber structure, shaped like branching trees, rises inside the historic walls and carries a new roof, recalling the rhythm of Gothic vaults in a contemporary material. The altar is moved to the centre of the nave so the space gathers around it. A new upper floor houses a community library, a quiet place for reading above the busy gathering space below. A ramp connects the two levels, making the whole building universally accessible, while kitchen and toilets sit at the sides to keep the central space open.</p>
     </div></div>
   </div>
-  <div class="run">10<b>Church Redesign</b></div>
+  <div class="run">12<b>Church Redesign</b></div>
 </section>
 
 <section class="page proj-image">
@@ -564,7 +634,7 @@
     <div class="pic"><img src="images/p02-existing-plan.png" alt="Existing ground floor plan of St. Bartholomäi"><span class="nave"></span></div>
     <p class="pcap"><b>Existing ground floor</b>The roofless nave is shaded</p>
   </div>
-  <div class="run">12<b>Church Redesign</b></div>
+  <div class="run">14<b>Church Redesign</b></div>
 </section>
 
 <section class="page ex1 ex2">
@@ -585,7 +655,7 @@
   </div>
   <div class="wplan"><img src="images/p02-proposed-plan.jpg" alt="Proposed ground floor plan in watercolour"></div>
   <p class="pcap wcap"><b>Proposed ground floor</b>Seating, altar platform and the church in its green setting</p>
-  <div class="run"><b>Portfolio</b>13</div>
+  <div class="run"><b>Portfolio</b>15</div>
 </section>
 </div>
 
@@ -616,7 +686,7 @@
       <p>A band of glazing between the old walls and the new roof lets daylight into the nave. The branching ribs filter this light, casting changing patterns of light and shadow across the old walls, while the warm timber gives the ruin a welcoming atmosphere for worship, gathering and reading.</p>
     </div></div>
   </div>
-  <div class="run">14<b>Church Redesign</b></div>
+  <div class="run">16<b>Church Redesign</b></div>
 </section>
 
 <section class="page sheet">
@@ -630,7 +700,7 @@
     <p><b>Centre right</b>Detail: every timber member shares a cross-section of 50 &times; 50 cm, built up from thin bonded layers of wood.</p>
     <p><b>Bottom right</b>Side view: the timber canopy rises freely above the historic walls, touching none of the old fabric.</p>
   </div>
-  <div class="run"><b>Portfolio</b>15</div>
+  <div class="run"><b>Portfolio</b>17</div>
 </section>
 </div>
 
