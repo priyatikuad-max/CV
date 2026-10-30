@@ -244,6 +244,30 @@
   .gap figcaption b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
   .gap .run { right: 18mm; }
 
+  /* Project 01 plans + renders spread */
+  .plans1 .wrap { position: absolute; left: 18mm; right: 22mm; top: 24mm; }
+  .plans1 .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .plans1 h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .plans1 .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
+  .plans1 .intro { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a;
+    margin: 6mm 0 0; padding-top: 4mm; border-top: 0.4pt solid var(--ink); }
+  .plans1 .pl { position: absolute; margin: 0; }
+  .plans1 .pl img { width: 100%; height: 100%; object-fit: contain; object-position: left bottom; display: block; mix-blend-mode: multiply; }
+  .plans1 .pl.a { left: 18mm; top: 100mm; width: 80mm; height: 58mm; }
+  .plans1 .pl.b { left: 108mm; top: 100mm; width: 80mm; height: 58mm; }
+  .plans1 .pl.c { left: 18mm; top: 172mm; width: 128mm; height: 96mm; }
+  .plans1 .pl.c figcaption { position: absolute; left: 134mm; bottom: 0; width: 36mm; margin: 0; }
+  .plans1 .pl.c figcaption b { display: block; margin-bottom: 1mm; }
+  .plans1 .pl figcaption, .renders .cap { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; line-height: 1.4; color: #2a2a2a; margin-top: 2mm; }
+  .plans1 .pl figcaption b, .renders .cap b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .plans1 .run { left: 18mm; }
+  .renders .big { position: absolute; left: 0; right: 0; top: 0; height: 186mm; }
+  .renders .small { position: absolute; top: 189mm; height: 62mm; }
+  .renders .small.l { left: 0; width: 104mm; } .renders .small.r { left: 106mm; right: 0; }
+  .renders img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .renders .cap { position: absolute; left: 22mm; right: 18mm; top: 256mm; margin: 0; }
+  .renders .run { right: 18mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -450,6 +474,30 @@
   <figure class="sk one"><img src="images/p01-sketch-before.png" alt="Sketch of the corner today"><figcaption><b>Before</b>Three storeys and a temporary roof: a gap in the street wall</figcaption></figure>
   <figure class="sk two"><img src="images/p01-sketch-after.png" alt="Sketch of the rebuilt corner"><figcaption><b>After</b>Rebuilt floors and roof restore the height of the street</figcaption></figure>
   <div class="run"><b>Portfolio</b>07</div>
+</section>
+</div>
+
+<!-- Project 01 plans + renders spread (pages 08–09) -->
+<div class="spread">
+<section class="page plans1">
+  <div class="wrap">
+    <p class="no">01 · Resilience &amp; Renewal</p>
+    <h2>From Existing to Proposed</h2>
+    <p class="sub">Rebuilding within the existing fabric</p>
+    <p class="intro">The existing plans show the building as it stands today: the corner reduced to three storeys, with an unused courtyard behind it. In the proposed ground floor, the corner opens as a restaurant visible from two streets and connected to the courtyard, which becomes a shared green space for residents. The original structure and flat sizes are kept, while the two rebuilt floors and the new roof floor increase the number of flats from 24 to 28.</p>
+  </div>
+  <figure class="pl a"><img src="images/p01-plan-existing-a.png" alt="Existing plan"><figcaption><b>Existing</b>Ground floor</figcaption></figure>
+  <figure class="pl b"><img src="images/p01-plan-existing-b.png" alt="Existing plan"><figcaption><b>Existing</b>Upper floor</figcaption></figure>
+  <figure class="pl c"><img src="images/p01-plan-proposed.png" alt="Proposed ground floor"><figcaption><b>Proposed</b>Ground floor: restaurant at the corner, opening into the shared courtyard</figcaption></figure>
+  <div class="run">08<b>Resilience &amp; Renewal</b></div>
+</section>
+
+<section class="page renders">
+  <div class="big"><img src="images/p01-render-street.jpg" alt="Street view of the rebuilt corner at dusk" style="object-position:50% 40%"></div>
+  <div class="small l"><img src="images/p01-render-gables.jpg" alt="Detail of the new gables"></div>
+  <div class="small r"><img src="images/p01-render-rear.jpg" alt="View of the roof floor at sunset"></div>
+  <p class="cap"><b>Views</b>The new design for Kärntener Straße 26: a restaurant on the ground floor, residential floors above, and the rebuilt upper floors and roof. Above: street view at dusk. Below: the new gables and the roof floor at sunset.</p>
+  <div class="run"><b>Portfolio</b>09</div>
 </section>
 </div>
 
