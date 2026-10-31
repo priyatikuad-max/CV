@@ -322,6 +322,20 @@
   .doc td:first-child { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.2pt; text-transform: uppercase; color: #8c7b6b; width: 22mm; }
   .fullph { position: absolute; inset: 0; border: 0; }
 
+  /* Project 02 closing spread, refined */
+  .fin2 .int { position: absolute; left: 0; right: 0; top: 0; height: 158mm; }
+  .fin2 .int img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; }
+  .fin2 .icap { position: absolute; left: 18mm; right: 22mm; top: 161mm; margin: 0; font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; color: #2a2a2a; }
+  .fin2 .icap b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
+  .fin2 .wrap { position: absolute; left: 18mm; right: 22mm; top: 182mm; border-top: 0.4pt solid var(--ink); padding-top: 7mm; }
+  .fin2 .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .fin2 h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .fin2 .quote { font-size: 15pt; font-style: italic; line-height: 1.35; margin: 6mm 0 0; color: #222; max-width: 150mm; }
+  .fin2 .body { font-family: "Jost", sans-serif; font-weight: 300; font-size: 9pt; line-height: 1.55; color: #2a2a2a; margin: 5mm 0 0; max-width: 140mm; }
+  .fin2 .run { left: 18mm; }
+  .street .run.solid { display: block; right: 18mm; color: #f4f2ee; } .street .run.solid b { color: #fff; }
+  .street .chip.close { bottom: 22mm; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -730,22 +744,22 @@
 
 <!-- Project 02 closing spread (pages 18–19) -->
 <div class="spread">
-<section class="page fin">
+<section class="page fin2">
+  <div class="int"><img src="images/p02-interior.jpg" alt="Interior view under the timber canopy"></div>
+  <p class="icap"><b>Interior</b>The timber canopy rises above the historic brick arcades, with the library gallery on both sides</p>
   <div class="wrap">
     <p class="no">02 · Church Redesign</p>
     <h2>A Place to Gather</h2>
-    <p class="sub">Sacred space and everyday life under one roof</p>
-    <div class="concl"><h3>Conclusion</h3>
-      <p>The project shows that a historic church can remain a sacred space while becoming an active part of everyday community life. New and old structures stand side by side, each readable on its own, together creating a place where the town can gather throughout the day, the week and the year.</p>
-    </div>
+    <p class="quote">A historic church can remain a sacred space while becoming an active part of everyday community life.</p>
+    <p class="body">New and old structures stand side by side, each readable on its own: heavy brick below, a light timber canopy above. Together they create a place where the town can gather throughout the day, the week and the year.</p>
   </div>
-  <div class="int"><img src="images/p02-interior.jpg" alt="Interior view under the timber canopy"></div>
-  <p class="chip"><b>Interior</b>The timber canopy rises above the historic brick arcades, with the library gallery on both sides</p>
+  <div class="run">18<b>Church Redesign</b></div>
 </section>
 
 <section class="page street">
   <img src="images/p02-street.jpg" alt="Street view of St. Bartholomäi with its new roof" style="object-position:45% 50%">
-  <p class="chip"><b>Street view</b>The new roof rests on the timber structure above the old walls, with a band of light between them</p>
+  <p class="chip close"><b>Street view</b>The new roof rests on the timber structure above the old walls, with a band of light between them</p>
+  <div class="run solid"><b>Portfolio</b>19</div>
 </section>
 </div>
 
