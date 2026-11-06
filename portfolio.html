@@ -336,6 +336,14 @@
   .street .run.solid { display: block; right: 18mm; color: #f4f2ee; } .street .run.solid b { color: #fff; }
   .street .chip.close { bottom: 22mm; }
 
+  /* Project 04 design spread */
+  .p04 .pl { position: absolute; margin: 0; }
+  .p04 .pl img { width: 100%; height: 100%; object-fit: contain; object-position: left bottom; display: block; mix-blend-mode: multiply; }
+  .p04 .persp { position: absolute; left: 0; right: 0; top: 0; height: 150mm; }
+  .p04 .persp img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .p04 .sect { position: absolute; left: 22mm; right: 18mm; top: 176mm; height: 70mm; }
+  .p04 .sect img { width: 100%; height: 100%; object-fit: contain; object-position: left bottom; display: block; mix-blend-mode: multiply; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -760,6 +768,33 @@
   <img src="images/p02-street.jpg" alt="Street view of St. Bartholomäi with its new roof" style="object-position:45% 50%">
   <p class="chip close"><b>Street view</b>The new roof rests on the timber structure above the old walls, with a band of light between them</p>
   <div class="run solid"><b>Portfolio</b>19</div>
+</section>
+</div>
+
+<!-- Project 04 design spread (pages 26–27) -->
+<div class="spread">
+<section class="page doc p04">
+  <div class="wrap">
+    <p class="no">04 · Encore</p>
+    <h2>A Theatre in the Round</h2>
+    <p class="sub">Performance at the heart of the building</p>
+    <div class="rule"></div>
+    <div class="sec"><h3>Design</h3><div>
+      <p>Jatra is traditionally performed in an open arena, with the audience gathered on all sides of the stage. The design takes this as its central idea: a circular open-air amphitheatre forms the heart of the building, its stepped seating sloping down towards a round stage. The curved wings wrap around this space, so rehearsal rooms, the library and workshops all look onto the performance below. A transparent tower with vertical fins marks the centre from the road, and a long bridge links the two wings across the courtyard.</p>
+    </div></div>
+  </div>
+  <figure class="pl" style="left:18mm; top:122mm; width:170mm; height:62mm"><img src="images/p04-plan-1st.jpg" alt="First floor plan"></figure>
+  <p class="cap" style="top:187mm; left:18mm"><b>1st floor</b>Curved wings wrapping around the central performance space</p>
+  <figure class="pl" style="left:18mm; top:198mm; width:170mm; height:62mm"><img src="images/p04-plan-2nd.jpg" alt="Second floor plan"></figure>
+  <p class="cap" style="top:263mm; left:18mm"><b>2nd floor</b>Rehearsal and library spaces overlooking the arena</p>
+  <div class="run">26<b>Encore</b></div>
+</section>
+<section class="page doc rp p04">
+  <div class="persp"><img src="images/p04-perspective.jpg" alt="Perspective of the open-air amphitheatre and tower"></div>
+  <p class="cap" style="top:153mm; left:22mm"><b>Perspective</b>The open-air amphitheatre, with stepped seating around a round stage and the tower behind</p>
+  <div class="sect"><img src="images/p04-section.jpg" alt="Section"></div>
+  <p class="cap" style="top:249mm; left:22mm"><b>Section</b>From the sunken amphitheatre to the tower with workshop, offices and administration</p>
+  <div class="run"><b>Portfolio</b>27</div>
 </section>
 </div>
 
