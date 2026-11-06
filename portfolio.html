@@ -353,6 +353,22 @@
   .p04o .aer { position: absolute; left: 0; right: 0; top: 0; height: 156mm; }
   .p04o .aer img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+  /* Project 04 opening, user arrangement */
+  .p04o .ctab { width: 100%; border-collapse: collapse; font-family: "Jost", sans-serif; font-size: 7.4pt; color: #2a2a2a; }
+  .p04o .ctab th { font-weight: 500; font-size: 6.2pt; letter-spacing: 1.2pt; text-transform: uppercase; color: #8c7b6b; text-align: left; padding: 0 2mm 1.4mm 0; border-bottom: .4pt solid #1c1c1c; }
+  .p04o .ctab td { font-weight: 300; padding: 1.6mm 2mm 1.6mm 0; border-bottom: .3pt solid #c9c1b6; vertical-align: top; line-height: 1.35; width: 25%; }
+  .p04o .ctab td:first-child { font-weight: 500; }
+  .p04o .aerL { position: absolute; left: 0; right: 0; bottom: 0; height: 140mm; }
+  .p04o .aerL img, .p04r .perR img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .p04r .wrap { left: 22mm; right: 18mm; top: 18mm; }
+  .p04r .band { display: none; }
+  .p04r .no.big { font-size: 64pt; margin-bottom: 4mm; }
+  .p04r .lead { font-size: 11.5pt; margin-top: 5mm; }
+  .p04r .meta { margin-top: 5mm; }
+  .p04r .sec { margin-top: 4mm; }
+  .p04r .perR { position: absolute; left: 0; right: 0; bottom: 0; height: 140mm; }
+  .p04r .perR img { object-position: 50% 78%; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -780,10 +796,26 @@
 </section>
 </div>
 
-<!-- Project 04 opening spread (pages 24–25) -->
+<!-- Project 04 opening spread (pages 24–25): approach + site plan (left), introduction + perspective (right) -->
 <div class="spread">
-<section class="page proj-text p04o">
-  <div class="band"></div>
+<section class="page doc p04o">
+  <div class="wrap">
+    <p class="no">04 · Encore</p>
+    <h2>From Issues to Design</h2>
+    <p class="sub">The approach</p>
+    <div class="rule"></div>
+    <p style="font-family:Jost,sans-serif;font-weight:300;font-size:8.8pt;line-height:1.55;color:#2a2a2a;margin:4mm 0 5mm">Each problem facing Jatrapala was translated into an objective, then into design indicators and finally into concrete design variables, so that every spatial decision responds to a real need.</p>
+    <table class="ctab">
+      <tr><th>Issue</th><th>Objective</th><th>Design indicator</th><th>Design variable</th></tr>
+      <tr><td>Declining public interest</td><td>Attract the public to Jatra</td><td>Public gathering and open space</td><td>Shared platform; views from the road</td></tr>
+      <tr><td>Loss of traditional value</td><td>Revive and enrich the tradition</td><td>Performance platform; research; new generation</td><td>Training space; open stage and voids</td></tr>
+      <tr><td>Little interaction among troupes</td><td>Increase interaction</td><td>Transparent functions; group activity</td><td>Connectivity; shared spaces</td></tr>
+    </table>
+  </div>
+  <div class="aerL"><img src="images/p04-aerial-plan.jpg" alt="Aerial view of the site plan"></div>
+  <p class="chip" style="left:18mm; bottom:10mm"><b>Site plan</b>The curved building wraps around a stepped, planted amphitheatre that descends to the round stage</p>
+</section>
+<section class="page proj-text p04o p04r">
   <div class="wrap">
     <p class="no big">04</p>
     <h2>Encore</h2>
@@ -798,31 +830,12 @@
     <div class="sec"><h3>Context</h3><div>
       <p>Jatrapala, rooted in the lives of ordinary people, has long served as entertainment, education and a means of social and political mobilisation. Today it is in danger: public interest is declining, the art form lacks exposure, and traditional culture is giving way to foreign trends.</p>
     </div></div>
-  </div>
-  <div class="chart">
-    <div class="sec" style="margin:0 0 4mm"><h3>Approach</h3><div>
-      <p>Each problem facing Jatrapala was translated into an objective, then into design indicators and finally into concrete design variables, so that every spatial decision responds to a real need.</p>
-    </div></div>
-    <table>
-      <tr><th>Issue</th><th>Objective</th><th>Design indicator</th><th>Design variable</th></tr>
-      <tr><td>Declining public interest</td><td>Attract the public to Jatra</td><td>Public gathering and open space</td><td>Shared platform; views from the road</td></tr>
-      <tr><td>Loss of traditional value</td><td>Revive and enrich the tradition</td><td>Performance platform; research; new generation</td><td>Training space; open stage and voids</td></tr>
-      <tr><td>Little interaction among troupes</td><td>Increase interaction</td><td>Transparent functions; group activity</td><td>Connectivity; shared spaces</td></tr>
-    </table>
-  </div>
-  <div class="run">24<b>Encore</b></div>
-</section>
-<section class="page doc rp p04o">
-  <div class="aer"><img src="images/p04-aerial-plan.jpg" alt="Aerial view of the site plan"></div>
-  <p class="cap" style="top:160mm; left:22mm"><b>Site plan</b>The curved building wraps around a stepped, planted amphitheatre that descends to the round stage</p>
-  <div class="wrap" style="top:176mm">
-    <p class="no">Site</p>
-    <div class="rule" style="margin-top:3mm"></div>
-    <div class="sec"><h3>Nikaton</h3><div>
-      <p>As the capital, Dhaka offers the greatest scope to present traditional culture. The site in Nikaton lies almost at the heart of the city, bordered by four residential areas, next to Bir Uttam Mir Shawkat Sarak and the Hatirjheel link road, a popular public destination. It is easy to reach and highly visible.</p>
+    <div class="sec"><h3>Site</h3><div>
+      <p>The site in Nikaton lies almost at the heart of Dhaka, bordered by four residential areas, next to Bir Uttam Mir Shawkat Sarak and the Hatirjheel link road, a popular public destination.</p>
     </div></div>
   </div>
-  <div class="run"><b>Portfolio</b>25</div>
+  <div class="perR"><img src="images/p04-perspective.jpg" alt="Perspective of the amphitheatre"></div>
+  <p class="chip" style="left:22mm; bottom:10mm"><b>Perspective</b>The open-air amphitheatre, with stepped seating around a round stage and the tower behind</p>
 </section>
 </div>
 
