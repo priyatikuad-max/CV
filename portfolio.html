@@ -385,6 +385,15 @@
   .ctab3 tr:first-child td { border-top: .4pt solid #1c1c1c; }
   .ctab3 td:first-child { font-weight: 500; font-size: 6.3pt; letter-spacing: 1.3pt; text-transform: uppercase; color: #8c7b6b; width: 26mm; }
 
+  /* Site map page with title */
+  .map2 .mwrap { position: absolute; left: 18mm; right: 22mm; top: 24mm; z-index: 1; }
+  .map2 .mwrap .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
+  .map2 .mwrap h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
+  .map2 .mwrap .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; padding-bottom: 5mm; border-bottom: .4pt solid var(--ink); }
+  .mappage.map2 img { position: absolute; left: 18mm !important; top: 62mm !important; width: 166mm !important; height: 150mm !important; right: auto; bottom: auto; inset: auto; object-fit: contain !important; }
+  .map2 .legend { left: 18mm; top: 216mm; bottom: auto; background: transparent; padding: 0; }
+  .map2 .mtxt { position: absolute; left: 18mm; right: 22mm; top: 236mm; margin: 0; font-family: "Jost", sans-serif; font-weight: 300; font-size: 8.8pt; line-height: 1.55; color: #2a2a2a; }
+
   /* On screen, show each page like a sheet of paper */
   @media screen {
     html { background: #dcdcdc; }
@@ -574,11 +583,14 @@
 
 <!-- Project 01 context spread (pages 06–07): site map and the corner before/after -->
 <div class="spread">
-<section class="page mappage">
+<section class="page mappage map2">
+  <div class="mwrap"><p class="no">01 · Restorey</p><h2>The Site</h2><p class="sub">A corner in the Gründerzeit block, Berlin-Schöneberg</p></div>
   <img src="images/p01-site-map.png" alt="3D site map of the block around Kärntener Straße 26">
   <div class="legend"><b>Site · Berlin-Schöneberg</b>
     <span><i style="background:#a0564b"></i>Kärntener Straße 26</span><span><i style="background:#f0d21e"></i>Connecting entry road</span>
   </div>
+  <p class="mtxt">Kärntener Straße 26 stands on a corner of a dense Gründerzeit block in Berlin-Schöneberg, between two railway lines and close to Innsbrucker Platz. Its damaged corner breaks the otherwise continuous street wall.</p>
+  <div class="run" style="left:18mm">06<b>Restorey</b></div>
 </section>
 
 <section class="page gap">
