@@ -276,7 +276,7 @@
   .site1 .no, .roof1 .no { font-family: "Jost", sans-serif; font-weight: 500; font-size: 7.5pt; letter-spacing: 3pt; text-transform: uppercase; color: var(--stone); margin: 0; }
   .site1 h2, .roof1 h2 { font-size: 26pt; font-weight: 400; line-height: 1.05; margin: 2.5mm 0 0; }
   .site1 .sub, .roof1 .sub { font-size: 12pt; font-style: italic; margin: 1.2mm 0 0; color: #333; }
-  .site1 .maps { position: absolute; left: 18mm; right: 22mm; top: 64mm; height: 46mm; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+  .site1 .maps { position: absolute; left: 18mm; right: 22mm; top: 64mm; height: 46mm; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 46mm; gap: 4mm; overflow: hidden; }
   .site1 .maps .ph { position: static; }
   .site1 .mcap, .roof1 .rcap { position: absolute; left: 18mm; font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.4pt; color: #2a2a2a; margin: 0; }
   .site1 .mcap { top: 112mm; }
@@ -368,6 +368,11 @@
   .p04r .sec { margin-top: 4mm; }
   .p04r .perR { position: absolute; left: 0; right: 0; bottom: 0; height: 140mm; }
   .p04r .perR img { object-position: 50% 78%; }
+
+  /* Site page images */
+  .site1 .maps img { width: 100%; height: 46mm; min-height: 0; object-fit: contain; object-position: center bottom; display: block; mix-blend-mode: multiply; }
+  .site1 .lmap2 { position: absolute; left: 18mm; top: 124mm; width: 80mm; height: 80mm; border-radius: 50%; overflow: hidden; }
+  .site1 .lmap2 img { width: 112%; height: 112%; margin: -6% 0 0 -6%; object-fit: cover; display: block; }
 
   /* On screen, show each page like a sheet of paper */
   @media screen {
@@ -493,7 +498,7 @@
   <ol>
     <li>
       <div class="frame thumb"><span class="label">Image</span><img src="images/p01.jpg" alt="" onerror="this.remove()"><span class="no">01</span></div>
-      <div class="txt"><p class="t">Resilience &amp; Renewal</p><p class="s">Adaptive reuse of war-damaged buildings, Berlin</p></div>
+      <div class="txt"><p class="t">Restorey</p><p class="s">Adaptive transformation of a war-damaged building, Berlin</p></div>
       <span class="pg">04</span>
     </li>
     <li>
@@ -528,10 +533,10 @@
   <div class="band"></div>
   <div class="wrap">
     <p class="no big">01</p>
-    <h2>Resilience &amp; Renewal</h2>
-    <p class="sub">Adaptive reuse of a war-damaged building, Berlin</p>
+    <h2>Restorey</h2>
+    <p class="sub">The Adaptive Transformation of Berlin&rsquo;s War-Damaged Infrastructure to a Changing Cityscape</p>
     <dl class="meta">
-      <dt>Project</dt><dd>Master&rsquo;s Thesis</dd>
+      <dt>Project</dt><dd>Master&rsquo;s Thesis · &ldquo;Resilience and Renewal&rdquo;</dd>
       <dt>Mentors</dt><dd>Prof. Dr. Rudolf Lückmann &amp; Architect von Ey</dd>
       <dt>Year</dt><dd>September 2025</dd>
       <dt>Location</dt><dd>Kärntener Straße 26, Berlin-Schöneberg, Germany</dd>
@@ -547,7 +552,7 @@
     </div></div>
     <p class="lead" style="margin-top:7mm">The building returns to the height of its neighbours and to its 1899 floor area, closing the gap left by the war with a new look inspired by its traditional appearance.</p>
   </div>
-  <div class="run">04<b>Resilience &amp; Renewal</b></div>
+  <div class="run">04<b>Restorey</b></div>
 </section>
 
 <section class="page street">
@@ -567,7 +572,7 @@
 
 <section class="page gap">
   <div class="wrap">
-    <p class="no">01 · Resilience &amp; Renewal</p>
+    <p class="no">01 · Restorey</p>
     <h2>Closing the Gap</h2>
     <p class="sub">The corner, before and after</p>
     <p class="intro">In 1899 the corner stood five storeys high with a roof floor and decorated gables. War damage reduced it to three storeys under a temporary roof. The design rebuilds the two lost floors and the roof, returning the corner to the height of its neighbours.</p>
@@ -582,16 +587,17 @@
 <div class="spread">
 <section class="page site1">
   <div class="wrap">
-    <p class="no">01 · Resilience &amp; Renewal</p>
+    <p class="no">01 · Restorey</p>
     <h2>Site and Context</h2>
     <p class="sub">Schöneberg around Kärntener Straße</p>
     <div style="border-top:0.4pt solid #1c1c1c;margin-top:6mm"></div>
   </div>
   <div class="maps">
-    <div class="ph">Historical map 1</div><div class="ph">Historical map 2</div><div class="ph">Historical map 3</div>
+    <img src="images/p01-map-1879.jpg" alt="Schöneberg 1879"><img src="images/p01-map-1901.jpg" alt="Schöneberg 1901"><img src="images/p01-map-1912.jpg" alt="Schöneberg 1912">
   </div>
-  <p class="mcap"><b>Historical maps</b>[years, e.g. 1899 · 1945 · today]</p>
-  <div class="ph lmap">Landmarks map</div>
+  <p class="mcap"><b>Historical maps</b>Schöneberg in 1879, 1901 and 1912, with the project site marked in yellow</p>
+  <div class="lmap2"><img src="images/p01-landmarks.jpg" alt="Landmarks around the site"></div>
+  <p class="mcap" style="top:212mm;width:80mm"><b>Landmarks</b>Places around the project site, numbered as in the text</p>
   <div class="marks">
     <div><h4><i>1</i>Rudolph-Wilde-Park</h4><p>An urban oasis laid out between 1906 and 1914 around the U-Bahn station Rathaus Schöneberg, offering a peaceful green ribbon loved by locals for walking, reading and playing boules.</p></div>
     <div><h4><i>2</i>Rathaus Schöneberg</h4><p>Seat of West Berlin&rsquo;s government from 1949 to 1990, office of the Governing Mayor and meeting place of the House of Representatives, and a global symbol of the divided city&rsquo;s desire for freedom.</p></div>
@@ -600,19 +606,19 @@
     <div><h4><i>4</i>Dominicus-Sportplatz</h4><p>A sports ground with a football pitch, athletics track and seating for around 4,500 spectators, established in 1920 and modernised in 2019/2020.</p></div>
     <div><h4><i>5</i>Natur-Park Schöneberger Südgelände</h4><p>A former railway yard turned nature reserve and art park, where wild vegetation grows among tracks, a steam locomotive and a water tower.</p></div>
   </div>
-  <div class="run">08<b>Resilience &amp; Renewal</b></div>
+  <div class="run">08<b>Restorey</b></div>
 </section>
 
 <section class="page plans1 rightpage">
   <div class="wrap">
-    <p class="no">01 · Resilience &amp; Renewal</p>
+    <p class="no">01 · Restorey</p>
     <h2>From Existing to Proposed</h2>
     <p class="sub">Rebuilding within the existing fabric</p>
     <p class="intro">The existing plans show the building as it stands today: the corner reduced to three storeys, with an unused courtyard behind it. In the proposed ground floor, the corner opens as a restaurant visible from two streets and connected to the courtyard, which becomes a shared green space for residents. The original structure and flat sizes are kept, while the two rebuilt floors and the new roof floor increase the number of flats from 24 to 28.</p>
   </div>
-  <figure class="pl a"><img src="images/p01-plan-existing-a.png" alt="Existing plan"><figcaption><b>Existing</b>Ground floor</figcaption></figure>
-  <figure class="pl b"><img src="images/p01-plan-existing-b.png" alt="Existing plan"><figcaption><b>Existing</b>Upper floor</figcaption></figure>
-  <figure class="pl c"><img src="images/p01-plan-proposed.png" alt="Proposed ground floor"><figcaption><b>Proposed</b>Ground floor: restaurant at the corner, opening into the shared courtyard</figcaption></figure>
+  <figure class="pl a"><img src="images/p01-plan-1899.jpg" alt="Ground floor 1899"><figcaption><b>Ground floor · 1899</b>The original layout</figcaption></figure>
+  <figure class="pl b"><img src="images/p01-plan-today.jpg" alt="Ground floor today"><figcaption><b>Ground floor · Today</b>After war damage and later changes</figcaption></figure>
+  <figure class="pl c"><img src="images/p01-plan-proposed2.jpg" alt="Proposed ground floor"><figcaption><b>Ground floor · Proposed</b>Restaurant at the corner, opening into the shared courtyard</figcaption></figure>
   <div class="run"><b>Portfolio</b>09</div>
 </section>
 </div>
@@ -621,7 +627,7 @@
 <div class="spread">
 <section class="page roof1">
   <div class="wrap">
-    <p class="no">01 · Resilience &amp; Renewal</p>
+    <p class="no">01 · Restorey</p>
     <h2>The Roofline</h2>
     <p class="sub">Gables abstracted from the 1899 façade</p>
     <p class="intro">The 1899 façade was crowned by a rhythm of decorated gables, lost with the war damage to the corner. The new design takes this rhythm as its starting point: the gables are studied, simplified and repeated, then placed along the new roof floor. They complete the roofline of the street again, in a contemporary language that recalls the building&rsquo;s original character.</p>
@@ -630,7 +636,7 @@
   <p class="rcap" style="top:190mm"><b>Front elevation</b>The street façade with the rebuilt corner and new roof floor</p>
   <div class="ph gab">Gable studies</div>
   <p class="rcap" style="top:263mm"><b>Gable study</b>From the historic gable to its abstracted form, and variations tested along the roofline</p>
-  <div class="run">10<b>Resilience &amp; Renewal</b></div>
+  <div class="run">10<b>Restorey</b></div>
 </section>
 
 <section class="page renders">
