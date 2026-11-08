@@ -282,11 +282,11 @@
   .site1 .mcap { top: 112mm; }
   .site1 .mcap b, .roof1 .rcap b { font-weight: 500; font-size: 6.4pt; letter-spacing: 1.4pt; text-transform: uppercase; color: #8c7b6b; margin-right: 2mm; }
   .site1 .lmap { left: 18mm; top: 122mm; width: 78mm; height: 140mm; }
-  .site1 .marks { position: absolute; left: 104mm; right: 22mm; top: 122mm; }
-  .site1 .marks div { margin-bottom: 4.2mm; }
-  .site1 .marks h4 { font-family: "EB Garamond", serif; font-weight: 400; font-size: 12pt; margin: 0 0 .8mm; }
+  .site1 .marks { position: absolute; left: 86mm; right: 22mm; top: 196mm; column-count: 2; column-gap: 5mm; }
+  .site1 .marks div { margin-bottom: 2.6mm; break-inside: avoid; }
+  .site1 .marks h4 { font-family: "EB Garamond", serif; font-weight: 400; font-size: 10pt; margin: 0 0 .5mm; }
   .site1 .marks h4 i { font-family: "Jost", sans-serif; font-style: normal; font-weight: 500; font-size: 7pt; color: #8c7b6b; margin-right: 2mm; }
-  .site1 .marks p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 7.8pt; line-height: 1.45; color: #2a2a2a; margin: 0; }
+  .site1 .marks p { font-family: "Jost", sans-serif; font-weight: 300; font-size: 6.8pt; line-height: 1.45; color: #2a2a2a; margin: 0; }
   .site1 .marks .site h4, .site1 .marks .site h4 i { color: #a0564b; }
   .site1 .run, .roof1 .run { left: 18mm; }
   .plans1.rightpage .wrap { left: 22mm; right: 18mm; }
@@ -371,7 +371,7 @@
 
   /* Site page images */
   .site1 .maps img { width: 100%; height: 46mm; min-height: 0; object-fit: contain; object-position: center bottom; display: block; mix-blend-mode: multiply; }
-  .site1 .lmap2 { position: absolute; left: 18mm; top: 124mm; width: 80mm; height: 80mm; border-radius: 50%; overflow: hidden; }
+  .site1 .lmap2 { position: absolute; left: 18mm; top: 198mm; width: 62mm; height: 62mm; border-radius: 50%; overflow: hidden; }
   .site1 .lmap2 img { width: 112%; height: 112%; margin: -6% 0 0 -6%; object-fit: cover; display: block; }
 
   /* Project 03 */
@@ -393,6 +393,12 @@
   .mappage.map2 img { position: absolute; left: 18mm !important; top: 62mm !important; width: 166mm !important; height: 150mm !important; right: auto; bottom: auto; inset: auto; object-fit: contain !important; }
   .map2 .legend { left: 18mm; top: 216mm; bottom: auto; background: transparent; padding: 0; }
   .map2 .mtxt { position: absolute; left: 18mm; right: 22mm; top: 236mm; margin: 0; font-family: "Jost", sans-serif; font-weight: 300; font-size: 8.8pt; line-height: 1.55; color: #2a2a2a; }
+
+  .site1 .fgtxt { position: absolute; left: 18mm; right: 22mm; top: 64mm; margin: 0; font-family: "Jost", sans-serif; font-weight: 300; font-size: 8.6pt; line-height: 1.55; color: #2a2a2a; }
+  .site1 .fg { position: absolute; top: 92mm; width: 82mm; height: 90mm; margin: 0; }
+  .site1 .fg.a { left: 18mm; } .site1 .fg.b { left: 106mm; }
+  .site1 .fg img { width: 100%; height: 84mm; object-fit: cover; display: block; mix-blend-mode: multiply; }
+  .site1 .fg figcaption { font-family: "EB Garamond", serif; font-size: 11pt; margin-top: 1mm; color: #1c1c1c; }
 
   /* On screen, show each page like a sheet of paper */
   @media screen {
@@ -615,12 +621,12 @@
     <p class="sub">Schöneberg around Kärntener Straße</p>
     <div style="border-top:0.4pt solid #1c1c1c;margin-top:6mm"></div>
   </div>
-  <div class="maps">
-    <img src="images/p01-map-1879.jpg" alt="Schöneberg 1879"><img src="images/p01-map-1901.jpg" alt="Schöneberg 1901"><img src="images/p01-map-1912.jpg" alt="Schöneberg 1912">
-  </div>
-  <p class="mcap"><b>Historical maps</b>Schöneberg in 1879, 1901 and 1912, with the project site marked in yellow</p>
+  <p class="fgtxt">The figure-ground maps compare the urban structure around the site in 1901 and today. In 1901 the corner sat within a dense, continuous grid of perimeter blocks. Today the blocks next to the site still keep this structure, while the area to the south has opened up into larger, looser forms. Kärntener Straße 26 belongs to the surviving historic fabric, which makes closing the gap in its street wall all the more important.</p>
+  <figure class="fg a"><img src="images/p01-fg-1901.jpg" alt="Figure-ground 1901"><figcaption>1901</figcaption></figure>
+  <figure class="fg b"><img src="images/p01-fg-today.jpg" alt="Figure-ground today"><figcaption>Today</figcaption></figure>
+  <p class="mcap" style="top:186mm"><b>Figure-ground</b>Built mass in black, open space in white; the project site in red</p>
   <div class="lmap2"><img src="images/p01-landmarks.jpg" alt="Landmarks around the site"></div>
-  <p class="mcap" style="top:212mm;width:80mm"><b>Landmarks</b>Places around the project site, numbered as in the text</p>
+  <p class="mcap" style="top:262mm;width:62mm"><b>Landmarks</b>Places around the project site, numbered as in the text</p>
   <div class="marks">
     <div><h4><i>1</i>Rudolph-Wilde-Park</h4><p>An urban oasis laid out between 1906 and 1914 around the U-Bahn station Rathaus Schöneberg, offering a peaceful green ribbon loved by locals for walking, reading and playing boules.</p></div>
     <div><h4><i>2</i>Rathaus Schöneberg</h4><p>Seat of West Berlin&rsquo;s government from 1949 to 1990, office of the Governing Mayor and meeting place of the House of Representatives, and a global symbol of the divided city&rsquo;s desire for freedom.</p></div>
