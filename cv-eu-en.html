@@ -16,8 +16,8 @@
   body {
     margin: 0;
     font-family: "EB Garamond", Garamond, serif;
-    font-size: 10.5pt;
-    line-height: 1.25;
+    font-size: 10.3pt;
+    line-height: 1.22;
     color: #111;
     background: #fff;
   }
@@ -27,8 +27,9 @@
   main { padding: 13mm 13mm 12mm 9mm; }
   @media print {
     .page { min-height: 275mm; }
-    aside { padding-top: 3mm; }
-    main { padding-top: 2mm; }
+    aside { padding-top: 3mm; padding-bottom: 0; }
+    main { padding-top: 2mm; padding-bottom: 0; }
+    .photo { margin-bottom: 5mm; }
   }
   @media screen {
     html { background: #e5e5e5; }
@@ -49,7 +50,7 @@
     font-size: 11.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6pt; color: var(--accent);
     margin: 0 0 4pt; padding-bottom: 2pt; border-bottom: 0.6pt solid var(--accent); break-after: avoid;
   }
-  aside section { margin-bottom: 7mm; }
+  aside section { margin-bottom: 6mm; }
   aside p { margin: 0 0 3pt; }
   aside .label { display: block; font-size: 9pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3pt; }
   aside ul { list-style: none; margin: 0; padding: 0; }
@@ -57,20 +58,18 @@
   aside a { color: inherit; text-decoration: none; }
   .lang { display: flex; justify-content: space-between; }
   .lang b { font-weight: 700; }
-  header { margin-bottom: 6mm; }
+  header { margin-bottom: 5mm; }
   h1 { font-size: 26pt; margin: 0; letter-spacing: 0.5pt; line-height: 1.05; }
   .tagline { font-size: 12.5pt; color: var(--accent); margin-top: 2pt; font-style: italic; }
-  main section { margin-bottom: 5.5mm; }
+  main section { margin-bottom: 4.5mm; }
   .profile { margin: 0; text-align: justify; hyphens: auto; }
-  .entry { display: grid; grid-template-columns: 27mm 1fr; column-gap: 4mm; margin-bottom: 4mm; break-inside: avoid; }
+  .entry { display: grid; grid-template-columns: 27mm 1fr; column-gap: 4mm; margin-bottom: 3mm; break-inside: avoid; }
   .when { font-style: italic; color: var(--muted); font-size: 10pt; padding-top: 1pt; }
   .what .title { font-weight: 700; font-size: 11pt; }
   .what .where { color: var(--muted); }
   .what ul { margin: 2pt 0 0; padding-left: 11pt; }
   .what li { margin: 0.5pt 0; }
   .what p { margin: 1pt 0; }
-  .sign { margin-top: 9mm; display: flex; gap: 12mm; align-items: flex-end; }
-  .sign div { border-top: 0.6pt solid #111; padding-top: 2pt; min-width: 55mm; font-size: 9.5pt; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -84,12 +83,11 @@
     <p><span class="label">Address</span>Halle (Saale), Germany</p>
     <p><span class="label">Phone</span>+49 155 66349276</p>
     <p><span class="label">Email</span><a href="mailto:priyati.kuad@gmail.com">priyati.kuad@gmail.com</a></p>
-    <p><span class="label">Portfolio</span>[link to online portfolio]</p>
   </section>
 
   <section>
     <h2>Personal Details</h2>
-    <p><span class="label">Date of birth</span>[DD.MM.YYYY]</p>
+    <p><span class="label">Date of birth</span>30 November 1993</p>
     <p><span class="label">Nationality</span>Bangladeshi</p>
     <p><span class="label">Work permit</span>Residence permit for job search (§ 20 AufenthG), permitted to work in Germany</p>
     <p><span class="label">Availability</span>Immediately</p>
@@ -112,16 +110,6 @@
     <p><span class="label">Heritage survey</span>Metigo MAP, Agisoft Metashape (photogrammetry)</p>
   </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Design development and working drawings</li>
-      <li>Building in existing and historic fabric</li>
-      <li>Measured survey and damage mapping</li>
-      <li>Coordination with structural and MEP consultants</li>
-      <li>Freehand sketching and 3D modelling</li>
-    </ul>
-  </section>
 </aside>
 
 <main>
@@ -130,9 +118,29 @@
     <div class="tagline">Architect, M.A. Architectural and Cultural Heritage</div>
   </header>
 
+
   <section>
-    <h2>Profile</h2>
-    <p class="profile">Architect with more than three years of professional experience in Bangladesh, from concept design to complete working drawings, and a Master’s degree in Architectural and Cultural Heritage from Anhalt University of Applied Sciences. Particular interest in conversions, extensions and renovation of existing buildings, combining careful analysis of the historic context with contemporary design. Experienced in ArchiCAD and Revit, used to working with consultants and authorities, and currently improving my German.</p>
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="when">04/2022 – 09/2025</div>
+      <div class="what">
+        <div class="title">M.A. Architectural and Cultural Heritage</div>
+        <div class="where">Anhalt University of Applied Sciences, Dessau, Germany</div>
+        <p>Design thesis: <em>Resilience and Renewal: The Adaptive Transformation of Berlin’s War-Damaged Infrastructure to a Changing Cityscape</em>: new apartments and roof storey for a war-damaged Gründerzeit building in Berlin-Schöneberg</p>
+        <p>Supervisors: Prof. Dr.-Ing. Rudolf Lückmann, Dipl.-Ing. Ulrich von Ey</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">03/2012 – 10/2018</div>
+      <div class="what">
+        <div class="title">Bachelor of Architecture (B.Arch.)</div>
+        <div class="where">Khulna University, Khulna, Bangladesh</div>
+        <p>Thesis: <em>Integration of Heritage into the Urban Fabric for Sustainable Development of Mymensingh</em></p>
+        <p>Supervisor: Prof. Sheikh Serajul Hakim, PhD</p>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -177,58 +185,6 @@
   </section>
 
   <section>
-    <h2>Education</h2>
-
-    <div class="entry">
-      <div class="when">04/2022 – 09/2025</div>
-      <div class="what">
-        <div class="title">M.A. Architectural and Cultural Heritage</div>
-        <div class="where">Anhalt University of Applied Sciences, Dessau, Germany</div>
-        <p>Design thesis: <em>Resilience and Renewal: The Adaptive Transformation of Berlin’s War-Damaged Infrastructure to a Changing Cityscape</em>: new apartments and roof storey for a war-damaged Gründerzeit building in Berlin-Schöneberg</p>
-        <p>Supervisors: Prof. Dr.-Ing. Rudolf Lückmann, Dipl.-Ing. Ulrich von Ey</p>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">03/2012 – 10/2018</div>
-      <div class="what">
-        <div class="title">Bachelor of Architecture (B.Arch.)</div>
-        <div class="where">Khulna University, Khulna, Bangladesh</div>
-        <p>Thesis: <em>Integration of Heritage into the Urban Fabric for Sustainable Development of Mymensingh</em></p>
-        <p>Supervisor: Prof. Sheikh Serajul Hakim, PhD</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Selected Projects</h2>
-
-    <div class="entry">
-      <div class="when">2024</div>
-      <div class="what">
-        <div class="title">Church conversion, Zerbst</div>
-        <p>Renovation of a late Romanesque church with a contemporary timber roof and a new public use (course Historical Surrounding Design 1)</p>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2022</div>
-      <div class="what">
-        <div class="title">Nine Dome Mosque, Bagerhat: heritage documentation</div>
-        <p>On-site survey of a 15th-century UNESCO World Heritage monument; mapped drawings and condition report with Metigo MAP</p>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="when">2021</div>
-      <div class="what">
-        <div class="title">Barobazar, Jhenaidah: documentation of Sultanate architecture</div>
-        <p>Independent project: site survey, photography, measured drawings and archival research</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
     <h2>Awards, Training and Membership</h2>
 
     <div class="entry">
@@ -253,10 +209,6 @@
     </div>
   </section>
 
-  <div class="sign">
-    <div>Halle (Saale), [date]</div>
-    <div>Signature</div>
-  </div>
 </main>
 
 </div>
