@@ -26,10 +26,11 @@
   aside { background: var(--side); padding: 14mm 7mm 12mm 9mm; }
   main { padding: 13mm 13mm 12mm 9mm; }
   @media print {
-    .page { min-height: 275mm; }
+    .page { min-height: 272mm; }
     aside { padding-top: 3mm; padding-bottom: 0; }
     main { padding-top: 2mm; padding-bottom: 0; }
     .photo { margin-bottom: 5mm; }
+    main section:last-child, main section:last-child .entry:last-child { margin-bottom: 0; }
   }
   @media screen {
     html { background: #e5e5e5; }
@@ -40,7 +41,7 @@
     aside, main { padding: 16px; }
   }
   .photo {
-    width: 35mm; height: 45mm; margin: 0 auto 7mm; border: 0.75pt dashed #999;
+    width: 35mm; height: 45mm; margin: 0 auto 7mm; border: none;
     display: flex; align-items: center; justify-content: center; color: #888; font-style: italic; background: #fff;
     position: relative; overflow: hidden;
   }
