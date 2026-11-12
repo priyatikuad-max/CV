@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priyati Golder – Lebenslauf</title>
+<style>
+  /* Top and bottom page margins keep page 2 from starting at the paper edge */
+  @page { size: A4; margin: 11mm 0; }
+  * { box-sizing: border-box; }
+  @font-face { font-family: "EB Garamond"; font-weight: 400; font-style: normal; src: url(fonts/eb-garamond-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: "EB Garamond"; font-weight: 400; font-style: italic; src: url(fonts/eb-garamond-latin-400-italic.woff2) format("woff2"); }
+  @font-face { font-family: "EB Garamond"; font-weight: 700; font-style: normal; src: url(fonts/eb-garamond-latin-700-normal.woff2) format("woff2"); }
+  @font-face { font-family: "EB Garamond"; font-weight: 700; font-style: italic; src: url(fonts/eb-garamond-latin-700-italic.woff2) format("woff2"); }
+  :root { --accent: #7a3b2e; --muted: #555; --side: #f2eeeb; }
+  body {
+    margin: 0;
+    font-family: "EB Garamond", Garamond, serif;
+    font-size: 10.5pt;
+    line-height: 1.25;
+    color: #111;
+    background: #fff;
+  }
+  /* Two columns: a tinted sidebar for personal data and skills, the main column for the career */
+  .page { display: grid; grid-template-columns: 62mm 1fr; min-height: 297mm; }
+  aside { background: var(--side); padding: 14mm 7mm 12mm 9mm; }
+  main { padding: 13mm 13mm 12mm 9mm; }
+  @media print {
+    .page { min-height: 275mm; }
+    aside { padding-top: 3mm; }
+    main { padding-top: 2mm; }
+  }
+  @media screen {
+    html { background: #e5e5e5; }
+    .page { max-width: 210mm; margin: 16px auto; box-shadow: 0 1px 6px rgba(0,0,0,.2); background: #fff; }
+  }
+  @media screen and (max-width: 640px) {
+    .page { display: block; margin: 0; box-shadow: none; }
+    aside, main { padding: 16px; }
+  }
+  .photo {
+    width: 35mm; height: 45mm; margin: 0 auto 7mm; border: 0.75pt dashed #999;
+    display: flex; align-items: center; justify-content: center; color: #888; font-style: italic; background: #fff;
+    position: relative; overflow: hidden;
+  }
+  /* The photo file covers the placeholder text; if it is missing, the dashed box remains */
+  .photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+  aside h2, main h2 {
+    font-size: 11.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6pt; color: var(--accent);
+    margin: 0 0 4pt; padding-bottom: 2pt; border-bottom: 0.6pt solid var(--accent); break-after: avoid;
+  }
+  aside section { margin-bottom: 7mm; }
+  aside p { margin: 0 0 3pt; }
+  aside .label { display: block; font-size: 9pt; color: var(--muted); text-transform: uppercase; letter-spacing: 0.3pt; }
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { margin: 0 0 3pt; }
+  aside a { color: inherit; text-decoration: none; }
+  .lang { display: flex; justify-content: space-between; }
+  .lang b { font-weight: 700; }
+  header { margin-bottom: 6mm; }
+  h1 { font-size: 26pt; margin: 0; letter-spacing: 0.5pt; line-height: 1.05; }
+  .tagline { font-size: 12.5pt; color: var(--accent); margin-top: 2pt; font-style: italic; }
+  main section { margin-bottom: 5.5mm; }
+  .profile { margin: 0; text-align: justify; hyphens: auto; }
+  .entry { display: grid; grid-template-columns: 27mm 1fr; column-gap: 4mm; margin-bottom: 4mm; break-inside: avoid; }
+  .when { font-style: italic; color: var(--muted); font-size: 10pt; padding-top: 1pt; }
+  .what .title { font-weight: 700; font-size: 11pt; }
+  .what .where { color: var(--muted); }
+  .what ul { margin: 2pt 0 0; padding-left: 11pt; }
+  .what li { margin: 0.5pt 0; }
+  .what p { margin: 1pt 0; }
+  .sign { margin-top: 9mm; display: flex; gap: 12mm; align-items: flex-end; }
+  .sign div { border-top: 0.6pt solid #111; padding-top: 2pt; min-width: 55mm; font-size: 9.5pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+
+<aside>
+  <div class="photo"><img src="photo.jpg" alt="" onerror="this.remove()">Foto</div>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p><span class="label">Wohnort</span>Halle (Saale)</p>
+    <p><span class="label">Telefon</span>+49 155 66349276</p>
+    <p><span class="label">E-Mail</span><a href="mailto:priyati.kuad@gmail.com">priyati.kuad@gmail.com</a></p>
+    <p><span class="label">Portfolio</span>[Link zum Online-Portfolio]</p>
+  </section>
+
+  <section>
+    <h2>Persönliche Daten</h2>
+    <p><span class="label">Geburtsdatum</span>[TT.MM.JJJJ]</p>
+    <p><span class="label">Staatsangehörigkeit</span>bangladeschisch</p>
+    <p><span class="label">Aufenthaltstitel</span>Aufenthaltserlaubnis zur Arbeitsplatzsuche (§ 20 AufenthG), Erwerbstätigkeit gestattet</p>
+    <p><span class="label">Verfügbarkeit</span>ab sofort</p>
+  </section>
+
+  <section>
+    <h2>Sprachen</h2>
+    <ul>
+      <li class="lang"><b>Bengalisch</b><span>Muttersprache</span></li>
+      <li class="lang"><b>Englisch</b><span>fließend (C1)</span></li>
+      <li class="lang"><b>Deutsch</b><span>Grundkenntnisse (A2)</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Software</h2>
+    <p><span class="label">CAD &amp; BIM</span>ArchiCAD, Revit, AutoCAD, SketchUp</p>
+    <p><span class="label">Visualisierung</span>Lumion, Enscape</p>
+    <p><span class="label">Grafik &amp; Layout</span>Photoshop, Illustrator, InDesign</p>
+    <p><span class="label">Bauaufnahme</span>Metigo MAP, Agisoft Metashape (Photogrammetrie)</p>
+  </section>
+
+  <section>
+    <h2>Kompetenzen</h2>
+    <ul>
+      <li>Entwurfs- und Ausführungsplanung</li>
+      <li>Bauen im Bestand und Denkmalkontext</li>
+      <li>Bauaufnahme und Schadenskartierung</li>
+      <li>Koordination mit Tragwerks- und TGA-Planung</li>
+      <li>Freihandzeichnen und 3D-Modellierung</li>
+    </ul>
+  </section>
+</aside>
+
+<main>
+  <header>
+    <h1>Priyati Golder</h1>
+    <div class="tagline">Architektin, M.A. Architectural and Cultural Heritage</div>
+  </header>
+
+  <section>
+    <h2>Profil</h2>
+    <p class="profile">Architektin mit über drei Jahren Berufserfahrung in Bangladesch, vom Entwurf bis zur vollständigen Ausführungsplanung, und Masterabschluss in Architectural and Cultural Heritage an der Hochschule Anhalt. Besonderes Interesse an Umbau, Erweiterung und Sanierung von Bestandsgebäuden, mit sorgfältiger Analyse des historischen Kontexts und zeitgemäßem Entwurf. Sicher in ArchiCAD und Revit, erfahren in der Abstimmung mit Fachplanern und Behörden; meine Deutschkenntnisse baue ich derzeit aus.</p>
+  </section>
+
+  <section>
+    <h2>Berufserfahrung</h2>
+
+    <div class="entry">
+      <div class="when">10/2020 – 03/2022</div>
+      <div class="what">
+        <div class="title">Architektin</div>
+        <div class="where">Plan to Perfection (P2P), Chattogram, Bangladesh</div>
+        <ul>
+          <li>Wohngebäude Finley, 14 Geschosse: vom Entwurf bis zur vollständigen Ausführungsplanung und Dokumentation</li>
+          <li>Stadtteilbibliothek, Rajshahi: Umsetzung der Planung und Bauleitung</li>
+          <li>Abstimmung der Architekturpläne mit Tragwerks- und TGA-Planern zur Lösung von Konflikten vor Baubeginn</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">01/2019 – 09/2020</div>
+      <div class="what">
+        <div class="title">Architektin (Junior)</div>
+        <div class="where">In Depth Architecture (IDA), Dhaka, Bangladesh</div>
+        <ul>
+          <li>Umbau eines Bestandsgebäudes zum Nestlé Bangladesh Distribution Center: Konzept- und Entwurfsmodelle</li>
+          <li>Wohngebäude, 6 Geschosse: Genehmigungsplanung und Abstimmung mit den Behörden nach dem Bangladesh National Building Code</li>
+          <li>Entwurfsprüfung und technische Analyse eines 11-geschossigen Gebäudes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">10/2018 – 12/2018</div>
+      <div class="what">
+        <div class="title">Praktikantin</div>
+        <div class="where">Venna Architects, Dhaka, Bangladesh</div>
+        <ul>
+          <li>Vorentwurf, Entwurf und Ausführungsunterlagen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ausbildung</h2>
+
+    <div class="entry">
+      <div class="when">04/2022 – 09/2025</div>
+      <div class="what">
+        <div class="title">M.A. Architectural and Cultural Heritage</div>
+        <div class="where">Hochschule Anhalt, Dessau</div>
+        <p>Masterarbeit (Entwurf): <em>Resilience and Renewal: The Adaptive Transformation of Berlin’s War-Damaged Infrastructure to a Changing Cityscape</em>: neue Wohnungen und Dachgeschoss für ein kriegsbeschädigtes Gründerzeitgebäude in Berlin-Schöneberg</p>
+        <p>Betreuer: Prof. Dr.-Ing. Rudolf Lückmann, Dipl.-Ing. Ulrich von Ey</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">03/2012 – 10/2018</div>
+      <div class="what">
+        <div class="title">Bachelor of Architecture (B.Arch.)</div>
+        <div class="where">Khulna University, Khulna, Bangladesh</div>
+        <p>Abschlussarbeit: <em>Integration of Heritage into the Urban Fabric for Sustainable Development of Mymensingh</em></p>
+        <p>Betreuer: Prof. Sheikh Serajul Hakim, PhD</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ausgewählte Projekte</h2>
+
+    <div class="entry">
+      <div class="when">2024</div>
+      <div class="what">
+        <div class="title">Kirchenumnutzung, Zerbst</div>
+        <p>Sanierung einer spätromanischen Kirche mit zeitgenössischem Holzdach und neuer öffentlicher Nutzung (Kurs Historical Surrounding Design 1)</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2022</div>
+      <div class="what">
+        <div class="title">Neun-Kuppel-Moschee, Bagerhat: Baudokumentation</div>
+        <p>Bauaufnahme eines UNESCO-Welterbe-Denkmals aus dem 15. Jahrhundert; Kartierungen und Zustandsbericht mit Metigo MAP</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="when">2021</div>
+      <div class="what">
+        <div class="title">Barobazar, Jhenaidah: Dokumentation der Sultanatsarchitektur</div>
+        <p>Eigenständiges Projekt: Bestandsaufnahme, Fotografie, Aufmaß und Archivrecherche</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Auszeichnungen, Weiterbildung und Mitgliedschaft</h2>
+
+    <div class="entry">
+      <div class="when">2024</div>
+      <div class="what">Workshop Fachwerkarchitektur, Hochschule Anhalt</div>
+    </div>
+    <div class="entry">
+      <div class="when">2021</div>
+      <div class="what">Zur Veröffentlichung ausgewählt, internationaler Wettbewerb De-urbanised Epidemics (<em>Quality Education at Far End!</em>)</div>
+    </div>
+    <div class="entry">
+      <div class="when">2019</div>
+      <div class="what">UNESCO-Workshop: Enhancing Climate Resilience of Heritage Sites in the Coastal Region of Bangladesh</div>
+    </div>
+    <div class="entry">
+      <div class="when">seit 2019</div>
+      <div class="what">Assoziiertes Mitglied, Institute of Architects Bangladesh (IAB), Nr. AG-024</div>
+    </div>
+    <div class="entry">
+      <div class="when">2013</div>
+      <div class="what">1. Preis, Plakatwettbewerb Oxfam &amp; Dhaka Art Center (<em>Right to Food</em>)</div>
+    </div>
+  </section>
+
+  <div class="sign">
+    <div>Halle (Saale), [Datum]</div>
+    <div>Unterschrift</div>
+  </div>
+</main>
+
+</div>
+</body>
+</html>
